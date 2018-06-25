@@ -221,13 +221,14 @@ p{
 
   }
 
+  
 
 #section-b .car1{
-  height:100%;
+  width:100%;
+  height:auto;
   display: flex;
-  align-items: center;
   position: relative;
-  animation: slide 15s 3s infinite;
+  animation: slide 15s 2s infinite;
 
  }
 
@@ -238,27 +239,31 @@ p{
 }
 
 #section-b .car2{
+  width:100%;
   height:100%;
   display: flex;
-  align-items: center;
   position: relative;
-  animation: slide 15s 3s infinite;
+  animation: slide 15s infinite ;
  }
 
+ 
  
 @keyframes slide {
   0%{
     left:0%;
   }
-  15%, 25%{
-    left: -240%;
+  25% {
+    left: -250%;
   }
 
-  35%, 50%{
-    left: -400%;
+  50% {
+    left: -430%;
   }
 
-  55%, 90%{
+  75% {
+    left: -460%;
+  }
+  100%{
     left: -580%;
   }
 }
