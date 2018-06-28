@@ -63,13 +63,6 @@ a:hover{
 
 /*-- Showcase Start--*/
 
-#showcase{
-    max-width: 450px;
-
-
-
-}
-
 
 #showcase .container{
     position: absolute;
@@ -556,7 +549,7 @@ a:hover{
   height:10%;
   width:100%;
   top:100%;
-  background:green;
+  background:var(--background);
   overflow: hidden;
 
 }
@@ -713,7 +706,7 @@ border-top: 8px solid var(--section-c);
 }
 
 
-
+/*-- Section-b footer Start--*/
 
 
 #section-b-footer{
