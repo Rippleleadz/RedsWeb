@@ -60,20 +60,13 @@ p{
 
 /*-- Showcase Start--*/
 
-#showcase{
-    max-width: 450px;
+@media screen and (max-width: 750px){ 
 
-
-}
-
-
-#showcase .container{
+#showcase {
     position: absolute;
     width:100%;
     height: 80%;
     overflow: hidden;
-
-
 }
 
 
@@ -86,48 +79,47 @@ p{
 #showcase .s-bg-image{
     width:100%;
     height:100%;
-    margin: auto;
-
 }
 
 
-#showcase .s-bg-image{
+#showcase .container{
+ position: absolute;
+ top:5%;
+ height: 95%;
+ display:flex;
+ flex-direction: column;
 
-    animation: zoom 10s linear forwards;
 
 }
-
-
 
 #showcase .logo{
-    position: absolute;
+    position: relative;
+    left:5%;
     width:30%;
-    max-width: 100px;
-    left:6%;
-    top:5%;
-    max-height: 100%;
+    
 
 }
+
 #showcase h1{
-  position: absolute;
+  position: relative;
+  top:20%;
+  flex-basis:97%;
   font-family: var(--font);
   font-size: 240%;
-  width:97%;
-  top:30%;
-  left:2.5%;
   text-transform: capitalize;
-
-
+  align-self: center;
 }
 
 #showcase p{
-  position: absolute;
+  position: relative;
+  width:96%;
+  margin: auto;
+  text-align: left;
   font-family: sans-serif;
   font-size: 110%;
-  bottom:0%;
-  width:100%;
+  flex-basis:100%;
   background: rgba(93, 93, 93, 0.3);
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 
@@ -138,42 +130,48 @@ p{
 
 /*-- Section-a Start--*/
 
+
 #section-a{
     position: absolute;
-    height:21%;
+    top: 80%;
+    height:100%;
     width:100%;
-    top:80%;
+    overflow:hidden;
+    background: var(--background);
+
 
 }
 
-.nav-container{
-    width:70%;
+
+#section-a ul{
+    flex-basis:100%;
     height: 100%;
-    margin: auto;
-
- }
-
-.nav-container ul{
-    height: 90%;
-    margin: 0% 7%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    
+}
+
+#section-a li{
+    width:100%;
+    height:5%;
+    display: flex;
+   
+
+
 
 }
 
-.nav-container li{
-    width: 50%;
-    height: 5%;
-}
-.nav-container a{
+ #section-a a{
+  width:100%;
+  height:100%;
   font-family: var(--font);
   background:var(--section-d);
   border-radius: 5px;
   border: 2px solid var(--section-c);
   border-top: 8px solid var(--section-c);
-  font-size: 120%;
+  font-size: 1em;
+
 }
 
 #section-a a:hover{
@@ -182,21 +180,6 @@ p{
 
 }
 
-.nav-container .home{
-  padding: 10% 23%;
-}
-
-.nav-container .gallery{
-  padding: 10% 15%;
-}
-
-.nav-container .video{
-  padding: 10% 18%;
-}
-
-.nav-container .contact{
-  padding: 10% 12%;
-}
 
 
 /*-- Section-a Finish--*/
@@ -205,21 +188,16 @@ p{
 /*-- Section-c Start--*/
 #section-c{
     position: absolute;
+    top:102.7%;
     width:100%;
-    top:101%;
-    height:16%;
+    height:10%;
     background:var(--section-c);
+    display:flex;
+    justify-content: center;
     overflow: hidden;
 }
 
-#section-c .container{
-    position: absolute;
-    width:100%;
-    height:100%;
-    display:flex;
-    justify-content: center;
 
-}
 #section-c .s-brand{
     position: relative;
     height: 50%;
@@ -250,50 +228,58 @@ p{
 /*-- Section-d Start--*/
 
 #section-d{
-    position: absolute;
-    width: 100%;
-    top:117%;
-    height:60%;
-
-    background:var(--section-d);
-    overflow: hidden;
-}
-
-
-#section-d .container{
-    width:80%;
-    height: 90%;
-    margin: 5% auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: center;
-    justify-content: space-between;
-
+position: absolute;
+width: 100%;
+top:113.8%;
+height:60%;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+justify-content: space-around;
+background:var(--section-d);
+overflow: hidden;
 }
 
 
 #section-d ul, li, a {
   background-color: inherit;
-  font-size: 90%;
+  font-size: 80%;
   text-transform: uppercase;
+  
 }
 
-#section-d .contact{
+#section-d .reds, .services, .location, .contacts, .media{
   position: relative;
-  width:35%;
-  left:60%;
-  height: 40%;
-  display: flex;
-  flex-flow:wrap;
-  justify-content:flex-start;
-  justify-content: space-between;
+  width:30%;
+  height: 37%;
+  top:5%;
+}
+
+ #section-d .contacts{
+   position: relative;
+   width:40%;
+   height: 35%;
+   left: 25%;
 
 }
+
+
 #section-d .box{
-  height: 25%;
+
+  width: 15%;
+  height: 15%;
+ 
 
 }
+
+ 
+#section-d .reds a{
+   font-size: 2vh;
+   color: darkred;
+   
+
+}
+
 
 
 /*-- Section-d End--*/
@@ -304,27 +290,19 @@ p{
 #main-footer{
     position: absolute;
     width: 100%;
-    height: 30%;
+    height: 25%;
     top:177%;
-    background: var(--background);
-
-}
-
-
-#main-footer .container{
-    width: 100%;
-    height: 100%;
     font-family: sans-serif;
     font-size: 75%;
-    color: #bababa;
+    color: #252425;
     font-family: var(--text);
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
-
-
+    background: var(--background);
 
 }
+
 
 #main-footer .tags{
     position: relative;
@@ -339,13 +317,15 @@ p{
     align-self: flex-start;
 
 }
+
+}
 /*-- Footer end--*/
 
 
 /*--Media--*/
 
 
-@media(min-width:568px){
+@media(min-width:768px){
 
 
 }
