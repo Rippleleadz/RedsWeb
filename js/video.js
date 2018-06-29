@@ -8,7 +8,7 @@ let image3 = document.querySelector(".image3");
 
 
     image1.addEventListener("click", function(){
-        svid1.style.display= "";
+        svid1.style.display= "block";
         svid2.style.display= "none";
         svid3.style.display= "none";
        
