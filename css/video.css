@@ -325,6 +325,8 @@
       width:30%;
       height: 37%;
       top:5%;
+      font-family: var(--font);
+      font-size: 1.em;
     }
     
      #section-d .contacts{
@@ -425,11 +427,10 @@
 
 #showcase .logo{
     position: absolute;
-    width:30%;
-    max-width: 100px;
+    width:10%;
     left:6%;
     top:5%;
-    max-height: 100%;
+  
 
 }
 #showcase h1{
@@ -642,6 +643,8 @@ font-size: 2em;
   width:30%;
   height: 37%;
   top:5%;
+  font-family: var(--font);
+  font-size: 1.em;
 }
 
  #section-d .contacts{

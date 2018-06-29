@@ -486,6 +486,8 @@ overflow: hidden;
   width:30%;
   height: 37%;
   top:5%;
+  font-family: var(--font);
+  font-size: 1.em;
 }
 
  #section-d .contacts{
@@ -1032,6 +1034,8 @@ overflow: hidden;
   width:30%;
   height: 37%;
   top:5%;
+  font-family: var(--font);
+  font-size: 1.em;
 }
 
  #section-d .contacts{
