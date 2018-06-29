@@ -61,6 +61,7 @@
     a:hover{
       color: White !important;
     }
+
     
     /*-- Showcase Start--*/
   
@@ -175,6 +176,7 @@
       border-radius: 5px;
       border: 2px solid var(--section-c);
       border-top: 8px solid var(--section-c);
+      font-size: 1em;
   
     }
     
@@ -721,8 +723,5 @@ font-size: 2em;
     align-self: flex-start;
 
 }
-/*-- Footer end--*/
-
-
-  
 }
+/*-- Footer end--*/ 

@@ -1,85 +1,100 @@
-/*--variables--*/
 :root{
 
-/*-- colors --*/
-  --background: #1a1b1d;
-  --text-color: #fff;
-  --section-c:#ba2e2f;
-  --section-d:#5d5d5d;
-  --btn:#ddb217;
-  --circles:rgba(103,112,127,.6);
-
-
-/*-- Fonts --*/
-  --font:fantasy;
-
-}
-
-
-/*--Core Styles--*/
-
-body, ul, li, a{
-    margin:0 auto;
-    padding:0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: var(--background);
-    color:#fff;
-    font-size: 1.em;
-    text-align: center;
-    text-decoration: none;
-    list-style-type: none;
-
-}
-
-
-h1, h2, h3, h4, a{
-    color: var(--text-color);
-    margin:0;
-    padding:0;
-}
-
-p{
-    margin:0;
-    padding: 1em 0;
-}
-
-.btn{
-    background:var(--btn);
-    display: block;
-    color:black;
-    padding: .5em 1em;
-    margin: .1em 0;
-    text-align: center;
-}
-
-.btn:hover{
- background:darkred;
-
-}
+    /*-- colors --*/
+      --background: #1a1b1d;
+      --text-color: #fff;
+      --section-c:#ba2e2f;
+      --section-d:#5d5d5d;
+      --btn:#ddb217;
+      --circles:rgba(103,112,127,.6);
+    
+    
+    /*-- Fonts --*/
+      --font:fantasy;
+    
+    }
+    
+    
+    /*--Core Styles--*/
+    
+    body, ul, li, a{
+        margin:0 auto;
+        padding:0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: var(--background);
+        color:#fff;
+        font-size: 1.em;
+        text-align: center;
+        text-decoration: none;
+        list-style-type: none;
+        letter-spacing: .1em;
+        
+    
+    }
+    
+    
+    h1, h2, h3, h4, a{
+        color: var(--text-color);
+        margin:0;
+        padding:0;
+    }
+    
+    p{
+        margin:0;
+        padding: 1em 0;
+    }
+    
+    .btn{
+        background:var(--btn);
+        display: block;
+        color:black;
+        padding: .5em 1em;
+        margin: .1em 0;
+        text-align: center;
+    }
+    
+    .btn:hover{
+     background:darkred;
+    
+    }
+    
+    a:hover{
+      color: White !important;
+    }
 
 
 /*-- Showcase Start--*/
 
-#showcase{
-    max-width: 450px;
+@media screen and (max-width: 750px){ 
 
+
+#showcase {
+    position: absolute;
+    top:8%;
+    width:100%;
+    height: 92%;   
 
 }
 
-
 #showcase .container{
     position: absolute;
+    top:3%;
     width:100%;
-    height: 80%;
-    overflow: hidden;
+    height: 100%;
+   display: flex;
+   flex-direction: column;
+   
+   
 
+    
+ 
 
 }
 
 
 #showcase .bg-image{
     display:none;
-
+ 
 }
 
 
@@ -109,47 +124,41 @@ p{
 
 
 #showcase .logo{
-    position: absolute;
-    width:30%;
-    max-width: 100px;
-    left:6%;
-    top:5%;
-    max-height: 100%;
+  width:30%;
+
+  
+
+    
 
 }
 #showcase h1{
-  position: absolute;
+    width:97%;
   font-family: var(--font);
   font-size: 240%;
-  width:97%;
-  top:30%;
-  left:2.5%;
+  margin-top: 1em;
   text-transform: capitalize;
+  align-self: center;
+  
 
 
 }
 
 #showcase p{
-  position: absolute;
+    width:49%;
+
   font-family: sans-serif;
   font-size: 110%;
-  top:50%;
-  left:25%;
-  width:49%;
+  align-self: center;
 
 }
 
 
 #showcase .btn{
-    position: absolute;
-    text-align: center;
     width:20%;
-    top:64%;
-    left:40%;
-    font-size: 59%;
     padding: 2% 0%;
-
-
+    font-size: 59%;
+    text-align: center;
+    align-self: center;
 }
 
 
@@ -157,46 +166,56 @@ p{
 /*-- Showcase End--*/
 
 
-/*-- Main Area Start--*/
 
 /*-- Section-a Start--*/
 
+
 #section-a{
-    position: absolute;
-    height:21%;
+    position: fixed;
+    top: 0%;
+    height:8%;
     width:100%;
-    top:80%;
+    overflow:hidden;
+    background: var(--background);
+    z-index: 1;
+
 
 }
 
-.nav-container{
-    width:70%;
+
+#section-a ul{
+    width:95%;
     height: 100%;
-    margin: auto;
-
- }
-
-.nav-container ul{
-    height: 90%;
-    margin: 0% 7%;
     display: flex;
-    flex-wrap: wrap;
+   
+    
+}
+
+#section-a li{
+    width:30%;
+    height:100%;
+    display: flex;
     align-items: center;
-    justify-content: space-around;
+
+
+
 
 }
 
-.nav-container li{
-    width: 50%;
-    height: 5%;
-}
-.nav-container a{
+ #section-a a{
+  width:93%;
+  height: 50%;
   font-family: var(--font);
   background:var(--section-d);
   border-radius: 5px;
   border: 2px solid var(--section-c);
   border-top: 8px solid var(--section-c);
-  font-size: 120%;
+  font-size: 1em;
+ 
+
+
+  
+
 }
 
 #section-a a:hover{
@@ -204,24 +223,6 @@ p{
     border-radius: 5px;
 
 }
-
-.nav-container .about{
-  padding: 10% 20%;
-}
-
-.nav-container .gallery{
-  padding: 10% 15%;
-}
-
-.nav-container .video{
-  padding: 10% 18%;
-}
-
-.nav-container .contact{
-  padding: 10% 12%;
-}
-
-
 
 
 
@@ -234,7 +235,7 @@ p{
      position: absolute;
     width:100%;
     top: 101%;
-    height:101%;
+    height:104%;
     overflow:hidden;
 
 
@@ -408,23 +409,20 @@ to{
 /*-- Section-b End--*/
 
 /*-- Section-c Start--*/
+
+
 #section-c{
     position: absolute;
+    top:205%;
     width:100%;
-    top:202%;
-    height:16%;
+    height:10%;
     background:var(--section-c);
+    display:flex;
+    justify-content: center;
     overflow: hidden;
 }
 
-#section-c .container{
-    position: absolute;
-    width:100%;
-    height:100%;
-    display:flex;
-    justify-content: center;
 
-}
 #section-c .s-brand{
     position: relative;
     height: 50%;
@@ -455,56 +453,58 @@ to{
 /*-- Section-d Start--*/
 
 #section-d{
-    position: absolute;
-    width: 100%;
-    top:218%;
-    height:60%;
-
-    background:var(--section-d);
-    overflow: hidden;
-}
-
-
-#section-d .container{
-    width:80%;
-    height: 90%;
-    margin: 5% auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: center;
-    justify-content: space-between;
-
+position: absolute;
+width: 100%;
+top:215%;
+height:60%;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+justify-content: space-around;
+background:var(--section-d);
+overflow: hidden;
 }
 
 
 #section-d ul, li, a {
   background-color: inherit;
-  font-size: 90%;
+  font-size: 80%;
   text-transform: uppercase;
+  
 }
 
-#section-d .contact{
+#section-d .reds, .services, .location, .contacts, .media{
   position: relative;
-  width:35%;
-  left:60%;
-  height: 40%;
-  display: flex;
-  flex-flow:wrap;
-  justify-content:flex-start;
-  justify-content: space-between;
+  width:30%;
+  height: 37%;
+  top:5%;
+}
 
-
-
-
-
-
+ #section-d .contacts{
+   position: relative;
+   width:40%;
+   height: 35%;
+   left: 25%;
 
 }
+
+
 #section-d .box{
-  height: 25%;
+
+  width: 15%;
+  height: 15%;
+ 
 
 }
+
+ 
+#section-d .reds a{
+   font-size: 2vh;
+   color: darkred;
+   
+
+}
+
 
 
 /*-- Section-d End--*/
@@ -515,27 +515,19 @@ to{
 #main-footer{
     position: absolute;
     width: 100%;
-    height: 30%;
-    top:278%;
-    background: var(--background);
-
-}
-
-
-#main-footer .container{
-    width: 100%;
-    height: 100%;
+    height: 25%;
+    top:275%;
     font-family: sans-serif;
     font-size: 75%;
-    color: #bababa;
+    color: #252425;
     font-family: var(--text);
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
-
-
+    background: var(--background);
 
 }
+
 
 #main-footer .tags{
     position: relative;
@@ -550,13 +542,18 @@ to{
     align-self: flex-start;
 
 }
+
+}
+
 /*-- Footer end--*/
+
 
 
 /*--Media--*/
 
 
-@media(min-width:568px){
+
+@media screen and (min-width:768px){
 
 
 #showcase .container{
@@ -711,7 +708,6 @@ to{
 /*-- Showcase End--*/
 
 
-/*-- Main Area Start--*/
 
 /*-- Section-a Start--*/
 #section-a{
@@ -967,36 +963,41 @@ a:active{
 
 /*-- Section-c Start--*/
 
-
-
 #section-c{
     position: absolute;
     width:100%;
     top:201%;
-    height:20%;
+    height:16%;
     background:var(--section-c);
+    display:flex;
+    justify-content: center;
+
+    overflow: hidden;
 }
 
-#section-c .container{
-    position: absolute;
-    width:100%;
-    hight:100%;
-
-}
 
 #section-c .s-brand{
-display: none;
+    position: relative;
+    height: 50%;
+    align-self: center;
+    animation: moving-banner 29s linear infinite;
+
+}
+
+#section-c .brand{
+   display: none;
 
 }
 
 
-#section-c .brand{
-    position: absolute;
-    width:80%;
-    left:9.5%;
-    top:1%;
-display: inline;
-animation: moving-banner 29s linear infinite;
+@keyframes moving-banner {
+
+  0%{
+    left: -104%;
+  }
+  100%{
+    left: 100%;
+  }
 
 }
 /*-- Section-c End--*/
@@ -1007,81 +1008,70 @@ animation: moving-banner 29s linear infinite;
 #section-d{
     position: absolute;
     width: 100%;
-    top:221%;
-    height:50%;
+    top:217%;
+    height:60%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
     background:var(--section-d);
-}
-
-
-#section-d .container{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-#section-d .reds{
-    position: absolute;
-    display: inline-block;
-    left:10%;
-    top:11%;
-    width:25%;
-    height:40%;
-
+    overflow: hidden;
 }
 
 
 
-#section-d .services{
-    position: absolute;
-    display: inline-block;
-    right:15%;
-    top:10%;
-    width:25%;
-    height:40%;
+#section-d ul, li, a {
+  background-color: inherit;
+  font-size: 80%;
+  text-transform: uppercase;
+  
+}
+
+#section-d .reds, .services, .location, .contacts, .media{
+  position: relative;
+  width:30%;
+  height: 37%;
+  top:5%;
+}
+
+ #section-d .contacts{
+   position: relative;
+   top:35%;
+  
+  
 
 }
 
-#section-d .location{
-   position: absolute;
-   display: inline-block;
-   left:10%;
-   top:57%;
-   width:25%;
-   height:40%;
+ 
+#section-d .reds a{
+   font-size: 2vh;
+   color: darkred;
+   
+
+}
+
+#section-d .media{
+  position: absolute;
+  top:72%;
+  right:14%;
+  width: 27%;
+  height: 15%;
+  display:flex;
+ justify-content: flex-end;
+ align-items: space-between;
+
+
 }
 
 
-#section-d .contacts{
-   position: absolute;
-   display: inline-block;
-   right:0.1%;
-   top:50%;
-   width:55%;
-   height:48%;
-}
+#section-d .box{
 
-#section-d .facebook{
-    position: absolute;
-    width:5%;
-    top:75%;
-    right:31%;
+  width: 10%;
+  height: 20%;
+ 
+
 }
 
 
-#section-d .twitter{
-    position: absolute;
-    width:5%;
-    top:75%;
-    right:22%;
-}
-
-
-
-#section-d .instagram{
-    position: absolute;
-    width:5%;
-    top:75%;
-    right:13%;
-}
 /*-- Section-d End--*/
 
 
@@ -1089,437 +1079,40 @@ animation: moving-banner 29s linear infinite;
 /*-- Footer Start--*/
 #main-footer{
     position: absolute;
+    top:277%;
     width: 100%;
-    height: 32%;
-    top:271%;
+    height: 35%;
+    font-family: sans-serif;
+    font-size: 75%;
+    color: #252425;
+    font-family: var(--text);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
     background: var(--background);
 
 }
 
 
-#main-footer .container{
-    position: absolute;
-    width: 100%;
-    height: 67%;
-
-
-}
-#main-footer .rights{
-   display:none;
-
-
-
+#main-footer ul{
+  position: relative;
+  top:5%;
 
 }
 
-#main-footer .right{
-    font-family: sans-serif;
-    font-size: 75%;
-    position: absolute;
-    width:100%;
-    background:#252425;
-    padding: 5% 0 ;
-    color: #bababa;
-
-
-    }
 #main-footer .tags{
-    display: inline-block;
-    position:absolute;
+    position: relative;
+    background:#252425;
     font-family: var(--text);
-    font-size: 60%;
-    left:4%;
-    top:130%;
-    width:90%;
-    color:#616162;
-}
-
-
-}
-
-
-@media(min-width:1440px){
-
-
-
-#showcase .maindot{
-    position: absolute;
-    top:92%;
-    left:43%;
-    padding:6px;
-    border-radius: 50%;
-    height:10px;
-    width:10px;
-    background:var(--circles);
-
-}
-
-
-#showcase .dot2{
-    position: absolute;
-    top:92%;
-    left:48%;
-    padding:6px;
-    border-radius: 50%;
-    height:10px;
-    width:10px;
-    background:var(--circles);
-
-}
-
-#showcase .dot3{
-    position: absolute;
-    top:92%;
-    left:53%;
-    padding:6px;
-    border-radius: 50%;
-    height:10px;
-    width:10px;
-    background:var(--circles);
-
-}
-
-#showcase .dot4{
-    position: absolute;
-    top:92%;
-    left:57%;
-    padding:6px;
-    border-radius: 50%;
-    height:10px;
-    width:10px;
-    background:var(--circles);
-
-}
-#showcase .btn{
-    width:10%;
-    top:62%;
-    left:45%;
-    height:4%
-
-}
-
-
-.downarrow:after{
-    content: "";
-    width:35px;
-    height: 35px;
-    position: absolute;
-    margin: auto;
-    top:0;
-    right:0;
-    left:2%;
-
-    bottom: -35%;
-    border-left:7px solid #fff;
-    border-bottom: 7px solid #fff;
-    -webkit-transform:rotate(314deg);
-    -webkit-animation: 4s arrow infinite ease;
-    animation: 4s arrow infinite ease;
-
-}
-
-
-@-webkit-keyframes arrow{
-    0%, 100%{
-        top:30%;
-    }
-
-    50%{
-        top:80px;
-    }
-}
-
-
-
-    #section-b .container2{
-    position: absolute;
-    width:500px;
-    height:500px;
-    top:10%;
-    left:9%;
-
-
-
-    }
-
-#section-b  .btn{
-    position: absolute;
-    display: inline-block;
-    width:25%;
-    left: 25%;
-    top: 90%;
-    padding:1% 1%
-}
-
-#section-b h1{
-    position: absolute;
-    display: inline-block;
-    top: 10%;
-    font-family: var(--font);
-    font-size: 490%;
-    color:black;
-    text-transform: uppercase;
-
-}
-
-#section-b p{
-    position: absolute;
-    display: inline-block;
-    top: 50%;
-    left: 11%;
-    width:60%;
-    color: black;
-    text-align:justify;
-    font-size: 120%;
-}
-
-
-
-
-
-}
-
-
-@media(min-width:2160px){
-
-
-#showcase .logo{
-    width:23vw;
-    max-width:200px;
-
-
-}
-#showcase h1{
-  font-size: 11vh;
-  width:75%;
-  top:30%;
-  left:13%;
-
-
-
-}
-
-#showcase p{
-  font-size: 240%;
-  top:55%;
-  left:26%;
-  width:50%;
-
-
-}
-
-
-
-#showcase .maindot{
-    position: absolute;
-    top:92%;
-    left:43%;
-    padding:10px;
-    border-radius: 50%;
-    height:10px;
-    width:10px;
-    background:var(--circles);
-
-}
-
-
-#showcase .dot2{
-    position: absolute;
-    top:92%;
-    left:48%;
-    padding:10px;
-    border-radius: 50%;
-    height:10px;
-    width:10px;
-    background:var(--circles);
-
-}
-
-#showcase .dot3{
-    position: absolute;
-    top:92%;
-    left:53%;
-    padding:10px;
-    border-radius: 50%;
-    height:10px;
-    width:10px;
-    background:var(--circles);
-
-}
-
-#showcase .dot4{
-    position: absolute;
-    top:92%;
-    left:57%;
-    padding:10px;
-    border-radius: 50%;
-    height:10px;
-    width:10px;
-    background:var(--circles);
-
-}
-#showcase .btn{
-    width:10%;
-    top:65%;
-    left:45%;
-    height:4%
-
-}
-
-
-
-.downarrow:after{
-    content: "";
-    width:40px;
-    height: 40px;
-    position: absolute;
-    margin: auto;
-    top:0;
-    right:0;
-    left:2%;
-
-    bottom: -45%;
-    border-left:10px solid #fff;
-    border-bottom: 10px solid #fff;
-    -webkit-transform:rotate(314deg);
-    -webkit-animation: 4s arrow infinite ease;
-    animation: 4s arrow infinite ease;
-
-}
-
-
-@-webkit-keyframes arrow{
-    0%, 100%{
-        top:30%;
-    }
-
-    50%{
-        top:80px;
-    }
-}
-
-
-    #section-b .container2{
-    position: absolute;
-    width:1000px;
-    height:750px;
-    top:18%;
-    left:9%;
-
-
-
-    }
-
-#section-b  .btn{
-    position: absolute;
-    display: inline-block;
-    width:25%;
-    left: 20%;
-    top: 90%;
-    padding:1% 1%
-}
-
-#section-b h1{
-    position: absolute;
-    display: inline-block;
-    top: 10%;
-    font-family: var(--font);
-    font-size: 700%;
-    color:black;
-    text-transform: uppercase;
-
-}
-
-#section-b p{
-    position: absolute;
-    display: inline-block;
-    top: 45%;
-    left: 11%;
-    width:45%;
-    color: black;
-    text-align:justify;
-    font-size: 180%;
-}
-
-
-#section-d .reds{
-    position: absolute;
-    font-family: sans-serif;
-    font-size: 175%;
-    display: inline-block;
-    left:10%;
-    top:11%;
-    width:25%;
-    height:4%;
-
-
-}
-
-#section-d .services{
-    position: absolute;
-    font-family: sans-serif;
-    font-size: 175%;
-    display: inline-block;
-    right:15%;
-    top:10%;
-    width:25%;
-    height:40%;
-
-}
-
-#section-d .location{
-   position: absolute;
-   font-family: sans-serif;
-   font-size: 175%;
-   display: inline-block;
-   left:10%;
-   top:57%;
-   width:25%;
-   height:40%;
-}
-
-
-#section-d .contacts{
-   position: absolute;
-   font-family: sans-serif;
-   font-size: 200%;
-   display: inline-block;
-   right:0.1%;
-   top:50%;
-   width:55%;
-   height:48%;
-}
-
-
-#main-footer .right{
-    font-family: sans-serif;
-    font-size: 140%;
-    position: absolute;
+    font-size: 85%;
     width:100%;
-    background:#252425;
-    padding: 5% 0 ;
-    color: #bababa;
-
-
-    }
-#main-footer .tags{
-    display: inline-block;
-    position:absolute;
-    font-family: sans-serif;
-    font-size: 120%;
-    left:4%;
-    top:130%;
-    width:90%;
+    height: 10%;
+    top:5%;
+    padding:5%;
     color:#616162;
-}
-
-
-
+    align-self: flex-start;
 
 }
-
-
-/*-- Footer end--*/
-
-
+}
+/*-- Footer end--*/ 
 
