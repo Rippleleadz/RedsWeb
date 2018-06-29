@@ -7,12 +7,13 @@
       --section-d:#5d5d5d;
       --btn:#ddb217;
       --circles:rgba(103,112,127,.6);
-    
-    
+      --navMouseOver: #4b4b4b;
+        
     /*-- Fonts --*/
       --font:fantasy;
     
     }
+    
     
     
     /*--Core Styles--*/
@@ -157,7 +158,7 @@
     align-self: center;
 }
 
-#showcase .down-arrow{
+ .down-arrow{
    display:none;
    }
 
@@ -219,7 +220,7 @@
 }
 
 #section-a a:hover{
-    background-color:red;
+    background-color: var(--navMouseOver);
     border-radius: 5px;
 
 }
@@ -370,6 +371,12 @@ align-self: center;
     text-align:justify;
 }
 
+
+ .up-arrow{
+    display:none;
+    
+    }
+
 @keyframes moving-clouds {
 from{
   right: -110%;
@@ -402,9 +409,10 @@ to{
     right:40%;
 
   }
-
-
 }
+
+
+
 
 /*-- Section-b End--*/
 
@@ -648,6 +656,7 @@ overflow: hidden;
     position: relative;
      width:3%;
      height: 8%;
+     margin-top:2%;
      align-self: center;
      animation: down-arrow 3s infinite ease;
     
@@ -657,61 +666,42 @@ overflow: hidden;
 
         0%{top:0%;} 
         
-        50%{top: 10%;}
+        50%{top: 15%;}
 
         100%{top: 0%;} 
       
       }
    
+
+      #showcase .select{
+      position: relative;
+      width:15%;
+      height: 15%;
+      bottom: 10%;
+      left:43%;
+      background:none;
+
+    }
+
+    #showcase ul{
+     height: 50%;
+     display: flex;
+     flex-direction: row;
+     align-items: flex-end;
+     background:none;
+
+
+  
+      }
+
+      
+    #showcase li{
+        border-radius: 50%;
+        height:27%;
+        width:27px;
+        background:var(--circles);
+         }
     
-#showcase .maindot{
-    position: absolute;
-    top:90%;
-    left:44%;
-    padding:2px;
-    border-radius: 50%;
-    height:10px;
-    width:10px;
-    background:var(--circles);
-
-}
-
-
-#showcase .dot2{
-    position: absolute;
-    top:90%;
-    left:48%;
-    padding:2px;
-    border-radius: 50%;
-    height:10px;
-    width:10px;
-    background:var(--circles);
-
-}
-
-#showcase .dot3{
-    position: absolute;
-    top:90%;
-    left:53%;
-    padding:2px;
-    border-radius: 50%;
-    height:10px;
-    width:10px;
-    background:var(--circles);
-
-}
-
-#showcase .dot4{
-    position: absolute;
-    top:90%;
-    left:57%;
-    padding:2px;
-    border-radius: 50%;
-    height:10px;
-    width:10px;
-    background:var(--circles);
-
-}
 
 
 /*-- Showcase End--*/
@@ -768,7 +758,7 @@ overflow: hidden;
   }
   
   #section-a a:hover{
-    background-color:red;
+    background-color: var(--navMouseOver);
     border-radius: 5px;
   
   }
@@ -782,9 +772,21 @@ overflow: hidden;
     width:100%;
     top: 108.6%;
     height:90%;
-
+   overflow: hidden;
 
 }
+
+#section-b .s-cloud1{
+    display: none;
+
+}
+
+#section-b .s-cloud2{
+    display: none;
+
+}
+
+
 
 
 #section-b .container{
@@ -805,15 +807,25 @@ overflow: hidden;
 
     }
 
+    #section-b .s-car1{
+        display: none;
+    
+    
+    }
+    
+    #section-b .s-car2{
+        display: none;
+    
+    
+     }
+
+    
 #section-b .cloud1{
     position: absolute;
     width:100%;
     height:60%;
     right:0%;
-
-    animation: moving-clouds 50s linear infinite;
-
-
+   animation: moving-clouds 50s linear infinite;
 
 }
 
@@ -822,9 +834,7 @@ overflow: hidden;
     width:60%;
     height: 45%;
     right:44%;
-
-    animation: moving-clouds 40s linear infinite;
-
+   animation: moving-clouds 40s linear infinite;
 
 }
 
@@ -834,11 +844,7 @@ overflow: hidden;
     width: 25%;
     top:65%;
     right:2%;
-    animation: moving-cars 12s  linear infinite;
-
-
-
-
+    animation: moving-car1  12s  linear infinite;
 }
 
 #section-b .car2{
@@ -846,54 +852,53 @@ overflow: hidden;
     width: 20%;
     top:64%;
     right:23%;
-    animation: moving-cars 12s  linear infinite;
-
-
-
- }
-
-
-#section-b .s-cloud1{
-    position: absolute;
-    width:100%;
-    height:45%;
-    right:65%;
-    display: none;
-
-
-
-}
-
-#section-b .s-cloud2{
-    position: absolute;
-    width:80%;
-    height: 45%;
-    right:1%;
-    display: none;
-
-
-}
-
-
-#section-b .s-car1{
-    position: absolute;
-    width: 50%;
-    top:72%;
-    right:2%;
-    display: none;
-
-
-}
-
-#section-b .s-car2{
-    position: absolute;
-    width: 40%;
-    top:73%;
-    right:45%;
-    display: none;
+    animation: moving-car2  12s  linear infinite;
 
 
  }
+
+
+ @keyframes moving-clouds {
+    from{
+      right: -110%;
+    }
+    to{
+      right: 100%;
+    }
+    }
+
+    @keyframes moving-car1 {
+        0% {
+          transform:scale(.3);
+           right:-66%;
+        }
+        50%{
+          right:25%;
+      
+        }
+        100%{
+            right:-50%;
+        }
+      
+      
+      }
+      
+      @keyframes moving-car2 {
+        0% {
+          transform:scale(.3);
+           right:-50%;
+        }
+        50%{
+          right:17%;
+      
+        }
+        100%{
+            right:-50%;
+        }
+      
+      
+      }
+      
 
 #section-b .container2{
     position: absolute;
@@ -931,6 +936,28 @@ overflow: hidden;
     text-align: start;
 }
 
+
+#section-b .up-arrow{
+    position: absolute;
+     width: 3%;
+     height: 8%;
+     left:2%;
+     bottom: 5%;
+     align-self: center;
+     animation: up-arrow 3s infinite ease;
+    
+    }
+
+    @keyframes up-arrow {
+
+        0%{bottom:5%;} 
+        
+        50%{bottom: 15%;}
+
+        100%{bottom: 5%;} 
+      
+      }
+   
 
 
 /*-- Section-b End--*/

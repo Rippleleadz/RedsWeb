@@ -7,6 +7,7 @@
   --section-d:#5d5d5d;
   --btn:#ddb217;
   --circles:rgba(103,112,127,.6);
+  --navMouseOver: #4b4b4b;
 
 
 /*-- Fonts --*/
@@ -176,7 +177,7 @@ p{
 }
 
 #section-a a:hover{
-    background-color:red;
+    background-color: var(--navMouseOver);
     border-radius: 5px;
 
 }
