@@ -456,7 +456,7 @@
 #section-a{
   position: absolute;
   top: 101%;
-  height:11%;
+  height:7%;
   width:100%;
   overflow:hidden;
   background: var(--background);
@@ -488,7 +488,7 @@
 #section-a a{
 position: relative;
 width:90%;
-height: 45%;
+height: 70%;
 margin-left:3%;
 font-family: var(--font);
 background:var(--section-d);
@@ -513,7 +513,7 @@ font-size: 2em;
 
 #section-b {
   position: absolute;
-  top: 109%;
+  top: 108%;
   width: 100%;
   height: 74%;
   background:var(--bacground);
@@ -524,6 +524,7 @@ font-size: 2em;
 #section-b iframe{
     width: 100%;
     height: 100%;
+   
 }
 
 .vidBox{

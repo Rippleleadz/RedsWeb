@@ -251,11 +251,12 @@
 
 #section-b .bg-image{
     position: absolute;
-    background:url(../images/s-bg-grey.jpg) center no-repeat;
+    background:url(../images/s-bg-grey.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     height:100%;
     width:100%;
-
 }
 
 #section-b .s-cloud1{
@@ -658,7 +659,7 @@ overflow: hidden;
     position: relative;
      width:3%;
      height: 8%;
-     margin-top:2%;
+     margin-top:0%;
      align-self: center;
      animation: down-arrow 3s infinite ease;
     
@@ -836,7 +837,7 @@ overflow: hidden;
     width:60%;
     height: 45%;
     right:44%;
-   animation: moving-clouds 40s linear infinite;
+   animation: moving-clouds 80s linear infinite;
 
 }
 
