@@ -1,15 +1,35 @@
 :root{
 
-    /*-- colors --*/
+    /*-- core --*/
       --background: #1a1b1d;
-      --text-color: #fff;
-      --section-c:#ba2e2f;
-      --section-d:#5d5d5d;
-      --section-b:#202020;
-      --btn:#ddb217;
+      --textColor: rgb(255, 255, 255);
+      --alinkHover:rgb(255, 255, 255);
+      --btnBackground:#ddb217;
+      --btnHover:rgb(139, 0, 0);
+      --btnTextColor:rgb(0, 0, 0);
       --circles:rgba(103,112,127,.6);
+
+      /* section- a */
+      --navbarBorder:rgb(186, 46, 47, 1);
+      --navbarBackground:rgb(93, 93, 93, .5);
       --navMouseOver: #4b4b4b;
-    
+
+       /* section- b */
+       --section-b:#202020;
+       --overlayBackground:rgba(0,0,0,0.8);
+
+      /* section- c */
+      --section-c:#ba2e2f;
+
+      /* section- d */
+      --section-d:#5d5d5d;
+
+      /* footer */
+      --section-footer:#5d5d5d;
+      --tags:#616162;
+      --tagsBackground:#252425;
+      --linkColor: #8b0000;
+      --infoTextColor:#252425;
     
     /*-- Fonts --*/
       --font:fantasy;
@@ -24,7 +44,7 @@
         padding:0;
         font-family: Arial, Helvetica, sans-serif;
         background: var(--background);
-        color:#fff;
+        color:var(--textColor);
         font-size: 1.em;
         text-align: center;
         text-decoration: none;
@@ -36,7 +56,7 @@
     
     
     h1, h2, h3, h4, a{
-        color: var(--text-color);
+        color: var(--textColor);
         margin:0;
         padding:0;
     }
@@ -47,21 +67,21 @@
     }
     
     .btn{
-        background:var(--btn);
+        background:var(--btnBackground);
         display: block;
-        color:black;
+        color: var(--btnTextColor);
         padding: .5em 1em;
         margin: .1em 0;
         text-align: center;
     }
     
     .btn:hover{
-     background:darkred;
+     background: var(--btnHover);
     
     }
     
     a:hover{
-      color: White !important;
+      color: var(--a-linkHover) !important;
     }
 
     
@@ -69,12 +89,10 @@
   
     @media screen and (max-width: 750px){ 
 
-
-    #showcase{
+      #showcase {
         position: absolute;
-        width: 100%;
-        height: 25%;
-        background: var(--background);
+        width:100%;
+        height: 35%;
         overflow: hidden;
     
     
@@ -95,17 +113,10 @@
     }
     
     
-    #showcase .s-bg-image{
-    
-        animation: zoom 10s linear forwards;
-    
-    }
-    
-    
-    
     #showcase .logo{
         position: absolute;
         width:30%;
+        max-width: 100px;
         left:6%;
         top:5%;
         max-height: 100%;
@@ -114,23 +125,13 @@
     #showcase h1{
       position: absolute;
       font-family: var(--font);
-      font-size: 180%;
+      font-size: 240%;
       width:97%;
       top:30%;
       left:2.5%;
       text-transform: capitalize;
     
     
-    }
-    
-    #showcase p{
-      position: absolute;
-      font-family: sans-serif;
-      font-size: 110%;
-      bottom:0%;
-      width:100%;
-      background: rgba(93, 93, 93, 0.3);
-      overflow-x: hidden;
     }
     
     
@@ -140,72 +141,130 @@
     
     /*-- Section-a Start--*/
 
-    
     #section-a{
-        position: absolute;
-        top: 25%;
-        height:7%;
-        width:100%;
-        overflow:hidden;
-        background: var(--background);
-
-
-    }
-    
-
-    #section-a ul{
-        width:95%;
-        height: 100%;
-        display: flex;
-        
-    }
-
-    #section-a li{
-        width:30%;
-        height:100%;
-        display: flex;
-        align-items: center;
-    
-
-
-    }
- 
-     #section-a a{
-      width:93%;
-      height: 50%;
-      font-family: var(--font);
-      background:var(--section-d);
-      border-radius: 5px;
-      border: 2px solid var(--section-c);
-      border-top: 8px solid var(--section-c);
-      font-size: 1em;
+      position:fixed;
+      height:30%;
+      width:18%;
+      right:4%;
+      overflow:hidden;
+      z-index: 1
   
-    }
+  }
+  
+  #section-a ul{
+    width:100%;
+    height: 100%;
+    background:none;
+    display: flex;
+    flex-direction: column;
     
-    #section-a a:hover{
-        background-color: var(--navMouseOver);
-        border-radius: 5px;
-    
-    }
+  }
+  
+  #section-a li{
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+  
+  
+  
+  }
+  
+  #section-a a{
+  width:100%;
+  height: 50%;
+  font-family: var(--font);
+  background:var(--navbarBackground);
+  border-radius: 5px;
+  border: 2px solid var(--navbarBorder);
+  border-top: 8px solid var(--navbarBorder);
+  
+  }
+  
+  #section-a a:hover{
+    background-color: var(--navMouseOver);
+    border-radius: 5px;
+  
+  }
     
     /*-- Section-a Finish--*/
     
     
     /*-- Section-b Start--*/
 
+    
+#section-b {
+  position: absolute;
+  top: 37%;
+  width: 100%;
+  height: 130%;
+  background:var(--section-b);
+   display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+ 
+}
 
-    #section-b {
-      position: absolute;
-      top: 32%;
-      width: 100%;
-      height: 40%;
-      background:var(--bacground);
-      overflow: hidden;
-    }
-     
+#section-b a {
   
-    
-    
+  width: 30%;
+  height:10%;
+  cursor: pointer;
+  outline: 0;
+  }
+
+#section-b a:hover {
+  opacity: 0.7;   
+}
+
+#section-b a img { 
+  width: 95%;
+  height: 100%;
+
+}
+
+#overlay { 
+  background: var( --overlayBackground); 
+  position:fixed; 
+  top: 0; 
+  right: 0; 
+  left:0; 
+  bottom: 0; 
+  width: 100%; 
+  height: 100%; 
+  z-index: 99999; 
+  display: none;
+}
+
+#overlay .modal {
+  
+  border-radius: 5px;
+  width: 95%;
+  height: 85%;
+  margin: 40px auto;
+  position: relative;
+
+}
+
+
+
+#overlay .modal #close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+#overlay iframe {
+    width: 100%;
+    height: 85vh;
+}
+
     /*-- Section-b finish--*/
 
     
@@ -215,7 +274,7 @@
     /*-- Section-c Start--*/
     #section-c{
         position: absolute;
-        top:102%;
+        top:200%;
         width:100%;
         height:10%;
         background:var(--section-c);
@@ -251,104 +310,121 @@
     }
     /*-- Section-c End--*/
     
+    /* footer start */
     
-    /*-- Section-d Start--*/
+
+    #section-footer{
+      position: absolute;
+      width: 100%;
+      top:210%;
+      height:75%;
+      background:var(--section-footer);
+      overflow: hidden;
+    }
     
-    #section-d{
+    .info{
+    width:100;
+    height: 75%;
+    display:flex;
+    flex-direction: row;
+    }
+    
+    #section-footer .info ul, li, a {
+    background-color: inherit;
+    font-size: 80%;
+    text-transform: uppercase;
+    
+    }
+    
+    #section-footer .info .reds, .services, .location, .contacts, .media{
+    position: relative;
+    width:30%;
+    height: 37%;
+    top:5%;
+    font-family: var(--font);
+    font-size: 1.em;
+    }
+    
+    #section-footer .info .contacts{
+     position: relative;
+     top:50%;
+     right:2%;
+    
+    
+    
+    }
+    
+    
+    #section-footer .info .reds a{
+     font-size: 2vh;
+     color: var(--linkColor);
+     
+    
+    }
+    
+    #section-footer .info .media{
     position: absolute;
+    top:72%;
+    right:14%;
+    width: 27%;
+    height: 15%;
+    display:flex;
+    justify-content: flex-end;
+    align-items: space-between;
+    
+    
+    }
+    
+    
+    #section-footer .info .box{
+    
+    width: 25%;
+    height: 20%;
+    
+    
+    }
+    
+    
+    /*-- tags--*/
+    
+    .info-bottom{
     width: 100%;
-    top:113.8%;
-    height:60%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-content: space-around;
-    background:var(--section-d);
-    overflow: hidden;
-}
-
-    
-    #section-d ul, li, a {
-      background-color: inherit;
-      font-size: 80%;
-      text-transform: uppercase;
-      
+    height: 25%;
+    font-family: sans-serif;
+    font-size: 75%;
+    color: var(--infoTextColor#252425);
+    font-family: var(--text);
+    background: var(--background);
+    display:flex;
+    flex-direction: column;
     }
     
-    #section-d .reds, .services, .location, .contacts, .media{
-      position: relative;
-      width:30%;
-      height: 37%;
-      top:5%;
-      font-family: var(--font);
-      font-size: 1.em;
+    .info-bottom ul{
+      width:100;
+      height: 40%;
     }
     
-     #section-d .contacts{
-       position: relative;
-       width:40%;
-       height: 35%;
-       left: 25%;
-    
+    .info-bottom .tags{
+      background:var( --tagsBackground);
+      width:100%;
+      height: 75%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
-
-
-    #section-d .box{
     
-      width: 15%;
-      height: 15%;
-     
+    .info-bottom .tags li{
+    position: relative;
+    top:5%;
+    width:15%; 
+    font-size: 85%;
+    color: var(--tags);
+    font-family: var(--text);
+    }
+    /*-- Footer end--*/ 
     
     }
     
-     
-    #section-d .reds a{
-       font-size: 2vh;
-       color: darkred;
-       
-    
-    }
-
-  
-   
-    /*-- Section-d End--*/
-    
-    
-    
-    /*-- Footer Start--*/
-    #main-footer{
-        position: absolute;
-        width: 100%;
-        height: 25%;
-        top:177%;
-        font-family: sans-serif;
-        font-size: 75%;
-        color: #252425;
-        font-family: var(--text);
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-around;
-        background: var(--background);
-    
-    }
-    
-    
-    #main-footer .tags{
-        position: relative;
-        background:#252425;
-        font-family: var(--text);
-        font-size: 85%;
-        width:100%;
-        height: 50%;
-        top:5%;
-        padding:5%;
-        color:#616162;
-        align-self: flex-start;
-    
-    }
-
-  }
-    /*-- Footer end--*/
     
     
     /*--Media--*/
@@ -404,8 +480,6 @@
 /*-- Showcase End--*/
 
 
-/*-- Main Area Start--*/
-
 /*-- Section-a Start--*/
 
 #section-a{
@@ -435,9 +509,6 @@
   height:100%;
   display: flex;
   
-
-
-
 }
 
 #section-a a{
@@ -446,10 +517,10 @@ width:90%;
 height: 70%;
 margin-left:3%;
 font-family: var(--font);
-background:var(--section-d);
+background:var(--navbarBackground);
 border-radius: 5px;
-border: 2px solid var(--section-c);
-border-top: 8px solid var(--section-c);
+border: 2px solid var(--navbarBorder);
+border-top: 8px solid var(--navbarBorder);
 font-size: 2em;
 
 
@@ -474,28 +545,31 @@ font-size: 2em;
   background:var(--section-b);
    display:flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+ 
 }
 
 #section-b a {
-  width: 15%;
-  height:25%;
+  
+  width: 10%;
+  height:15%;
   cursor: pointer;
   outline: 0;
-  align-content: space-around;
-}
+  }
 
 #section-b a:hover {
   opacity: 0.7;   
 }
 
 #section-b a img { 
-  width: 100%;
-  height: auto;
+  width: 95%;
+  height: 100%;
+
 }
 
 #overlay { 
-  background: rgba(0,0,0,0.8); 
+  background: var(--overlayBackground);
   position:fixed; 
   top: 0; 
   right: 0; 
@@ -514,7 +588,7 @@ font-size: 2em;
   height: 85%;
   margin: 40px auto;
   position: relative;
-  padding: 30px 20px 15px;
+
 }
 
 
@@ -579,117 +653,116 @@ font-size: 2em;
 /*-- Section-c End--*/
 
 
-/*-- Section-d Start--*/
+  /* footer start */
 
-#section-d{
-    position: absolute;
-    width: 100%;
-    top:202%;
-    height:60%;
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    background:var(--section-d);
-    overflow: hidden;
-}
-
-
-
-#section-d ul, li, a {
-  background-color: inherit;
-  font-size: 80%;
-  text-transform: uppercase;
-  
-}
-
-#section-d .reds, .services, .location, .contacts, .media{
-  position: relative;
-  width:30%;
-  height: 37%;
-  top:5%;
-  font-family: var(--font);
-  font-size: 1.em;
-}
-
- #section-d .contacts{
-   position: relative;
-   top:35%;
-  
-  
-
-}
-
- 
-#section-d .reds a{
-   font-size: 2vh;
-   color: darkred;
-   
-
-}
-
-#section-d .media{
+#section-footer{
   position: absolute;
-  top:72%;
-  right:14%;
-  width: 27%;
-  height: 15%;
-  display:flex;
- justify-content: flex-end;
- align-items: space-between;
+  width: 100%;
+  top:202%;
+  height:75%;
+  background:var(--section-footer);
+  overflow: hidden;
+}
+
+.info{
+width:100;
+height: 75%;
+display:flex;
+flex-direction: row;
+}
+
+#section-footer .info ul, li, a {
+background-color: inherit;
+font-size: 80%;
+text-transform: uppercase;
+
+}
+
+#section-footer .info .reds, .services, .location, .contacts, .media{
+position: relative;
+width:30%;
+height: 37%;
+top:5%;
+font-family: var(--font);
+font-size: 1.em;
+}
+
+#section-footer .info .contacts{
+ position: relative;
+ top:35%;
+
 
 
 }
 
 
-#section-d .box{
-
-  width: 10%;
-  height: 20%;
+#section-footer .info .reds a{
+ font-size: 2vh;
+ color: var(--linkColor);
  
 
 }
 
+#section-footer .info .media{
+position: absolute;
+top:72%;
+right:14%;
+width: 27%;
+height: 15%;
+display:flex;
+justify-content: flex-end;
+align-items: space-between;
 
-/*-- Section-d End--*/
-
-
-
-/*-- Footer Start--*/
-#main-footer{
-    position: absolute;
-    top:264%;
-    width: 100%;
-    height: 35%;
-    font-family: sans-serif;
-    font-size: 75%;
-    color: #252425;
-    font-family: var(--text);
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
-    background: var(--background);
 
 }
 
 
-#main-footer ul{
+#section-footer .info .box{
+
+width: 10%;
+height: 20%;
+
+
+}
+
+
+/*-- tags--*/
+
+.info-bottom{
+width: 100%;
+height: 25%;
+font-family: sans-serif;
+font-size: 75%;
+color: var(--infoTextColor#252425);
+font-family: var(--text);
+background: var(--background);
+display:flex;
+flex-direction: column;
+}
+
+.info-bottom ul{
+  width:100;
+  height: 40%;
+}
+
+.info-bottom .tags{
+  background:var( --tagsBackground);
+  width:100%;
+  height: 75%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.info-bottom .tags li{
   position: relative;
   top:5%;
-
-}
-
-#main-footer .tags{
-    position: relative;
-    background:#252425;
-    font-family: var(--text);
-    font-size: 85%;
-    width:100%;
-    height: 10%;
-    top:5%;
-    padding:5%;
-    color:#616162;
-    align-self: flex-start;
-
-}
-}
+  width:15%; 
+  font-size: 85%;
+  color: var(--tags);
+  font-family: var(--text);
+  }
 /*-- Footer end--*/ 
+
+}
+
