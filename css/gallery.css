@@ -48,11 +48,10 @@
     font-family: Arial, Helvetica, sans-serif;
     background: var(--background);
     color:var(--textColor);
-    font-size: 1.em;
     text-align: center;
     text-decoration: none;
     list-style-type: none;
-    letter-spacing: .1em;
+    letter-spacing: .05em;
     
 
 }
@@ -119,17 +118,16 @@ a:hover{
 
 #showcase .logo{
     position: absolute;
-    width:30%;
-    max-width: 100px;
+    width:24%;
+    height: 5vh;
     left:6%;
     top:5%;
-    max-height: 100%;
 
 }
 #showcase h1{
   position: absolute;
   font-family: var(--font);
-  font-size: 240%;
+  font-size: 5vh;
   width:97%;
   top:30%;
   left:2.5%;
@@ -147,9 +145,9 @@ a:hover{
 
 #section-a{
   position:fixed;
-  height:30%;
-  width:18%;
-  right:4%;
+  height:30vh;
+  width:19vw;
+  right:2%;
   overflow:hidden;
   z-index: 1
 
@@ -175,21 +173,16 @@ align-items: center;
 }
 
 #section-a a{
-width:100%;
-height: 50%;
+width:92%;
+height: 54%;
 font-family: var(--font);
 background:var(--navbarBackground);
 border-radius: 5px;
 border: 2px solid var(--navbarBorder);
 border-top: 8px solid var(--navbarBorder);
-
+font-size: 2vh;
 }
 
-#section-a a:hover{
-background-color: var(--navMouseOver);
-border-radius: 5px;
-
-}
 
 /*-- Section-a Finish--*/
 
@@ -271,20 +264,17 @@ border-radius: 5px;
   top:83%;
   width: 100%;
   height: 17%;
-  margin: auto;
   background:var(--background);
 
 }
 
 #section-b-footer .choose{
-  position: relative;
   width: 100%;
   height: 94%;
-  margin: auto;
   background: var(--section-b-footer);
   display:flex;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: space-around;
   overflow: hidden;
   
   
@@ -293,10 +283,9 @@ border-radius: 5px;
 
 
 #section-b-footer .choose img{
-
-  width: 18.9%;
-  height: 30%;
-  margin: 0% 0% 0% 0.45%;
+  align-self: center;
+  width: 15%;
+  height: 35%;
   border:1px var(--imgBorder);
   
  }
@@ -358,104 +347,119 @@ border-radius: 5px;
 }
 
 .info{
-width:100;
+width:100%;
 height: 75%;
+margin-right:1%;
 display:flex;
 flex-direction: row;
-}
-
-#section-footer .info ul, li, a {
-background-color: inherit;
-font-size: 80%;
-text-transform: uppercase;
+flex-wrap: wrap;
+align-content: center;
+justify-content: flex-end;
 
 }
 
-#section-footer .info .reds, .services, .location, .contacts, .media{
-position: relative;
-width:30%;
-height: 37%;
-top:5%;
-font-family: var(--font);
-font-size: 1.em;
-}
-
-#section-footer .info .contacts{
- position: relative;
- top:50%;
- right:2%;
-
-
-
-}
-
-
-#section-footer .info .reds a{
- font-size: 2vh;
- color: var(--linkColor);
+#section-footer .reds a{
+  color: var(--linkColor);
+  
+ 
+ }
+ 
  
 
-}
-
-#section-footer .info .media{
-position: absolute;
-top:72%;
-right:14%;
-width: 27%;
-height: 15%;
-display:flex;
-justify-content: flex-end;
-align-items: space-between;
+#section-footer ul, li, a {
+background-color: inherit;
 
 
 }
+
+#section-footer .reds, .services, .location, .contacts{
+  width:29%;
+  height: 40%;
+  margin-right: 2%;
+font-family: var(--font);
+
+
+
+}
+
+#section-footer .reds, .services, .location, .contacts{
+  font-size: 2vh;
+  
+}
+
+#section-footer .reds, .services, .location,  li{
+  text-align: left;
+  
+}
+
+
+
+#section-footer .contacts p{
+ padding:7%;
+ 
+}
+
 
 
 #section-footer .info .box{
-
 width: 25%;
 height: 20%;
-
-
 }
 
 
 /*-- tags--*/
 
 .info-bottom{
-width: 100%;
-height: 25%;
-font-family: sans-serif;
-font-size: 75%;
-color: var(--infoTextColor#252425);
-font-family: var(--text);
-background: var(--background);
-display:flex;
-flex-direction: column;
-}
+  width: 100%;
+  height: 30%;
+  font-family: sans-serif;
+  font-size: 1.6vh;
+  color: var(--infoTextColor#252425);
+  font-family: var(--text);
+  background: var(--background);
+  display:flex;
+  flex-direction: column;
 
-.info-bottom ul{
-  width:100;
-  height: 40%;
-}
+  }
+  
+  .info-bottom .rights{
+    width:100%;
+    height: 35%;
 
-.info-bottom .tags{
-  background:var( --tagsBackground);
-  width:100%;
-  height: 75%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
+  }
+  
+  .rights ul {
+    width:80%;
+    height: 7vh;
 
-.info-bottom .tags li{
-position: relative;
-top:5%;
-width:15%; 
-font-size: 85%;
-color: var(--tags);
-font-family: var(--text);
+  
+  }
+  
+
+  
+  .rights li {
+    text-align: center;
 }
+  
+  
+  
+  .info-bottom .tags{
+    background:var( --tagsBackground);
+    width:100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .info-bottom .tags li{
+  width:20%;
+  height: 25%; 
+  font-size: 1.4vh;
+  color: var(--tags);
+  font-family: var(--text);
+  }
 /*-- Footer end--*/ 
 
 }
@@ -594,9 +598,8 @@ font-size: 2em;
 
   #section-b img{ 
     width: 97.7vw;
-    height: 75vh;
-    border: 5px solid var(--background);
-  
+    height: 74vh;
+    border: 5px solid var(--background);  
 
   }
  
@@ -644,7 +647,7 @@ font-size: 2em;
 
 #section-b-footer{
   position: absolute;
-  top:184%;
+  top:186%;
   width: 100%;
   height: 16%;
   background:var(--background);
@@ -683,7 +686,7 @@ font-size: 2em;
 #section-c{
   position: absolute;
   width:100%;
-  top:201%;
+  top:203%;
   height:16%;
   background:var(--section-c);
   display:flex;
@@ -720,9 +723,10 @@ font-size: 2em;
 /*-- Section-c End--*/
 
 
- /* footer start */
+/* footer start */
+    
 
- #section-footer{
+#section-footer{
   position: absolute;
   width: 100%;
   top:219%;
@@ -732,103 +736,123 @@ font-size: 2em;
 }
 
 .info{
-width:100;
+width:100%;
 height: 75%;
+margin-right:1%;
 display:flex;
 flex-direction: row;
-}
-
-#section-footer .info ul, li, a {
-background-color: inherit;
-font-size: 80%;
-text-transform: uppercase;
+flex-wrap: wrap;
+align-content: center;
+justify-content: flex-end;
 
 }
 
-#section-footer .info .reds, .services, .location, .contacts, .media{
-position: relative;
-width:30%;
-height: 37%;
-top:5%;
-font-family: var(--font);
-font-size: 1.em;
-}
-
-#section-footer .info .contacts{
- position: relative;
- top:35%;
-
-
-
-}
-
-
-#section-footer .info .reds a{
- font-size: 2vh;
- color: var(--linkColor);
+#section-footer .reds a{
+  color: var(--linkColor);
+  
+ 
+ }
+ 
  
 
-}
-
-#section-footer .info .media{
-position: absolute;
-top:72%;
-right:14%;
-width: 27%;
-height: 15%;
-display:flex;
-justify-content: flex-end;
-align-items: space-between;
+#section-footer ul, li, a {
+background-color: inherit;
 
 
 }
+
+#section-footer .reds, .services, .location, .contacts{
+  width:29%;
+  height: 40%;
+  margin-right: 2%;
+font-family: var(--font);
+
+
+
+}
+
+#section-footer .reds, .services, .location, .contacts{
+  font-size: 2vh;
+  
+}
+
+#section-footer .reds, .services, .location,  li{
+  text-align: left;
+  
+}
+
+
+
+#section-footer .contacts p{
+ padding:7%;
+ 
+}
+
 
 
 #section-footer .info .box{
-
-width: 10%;
+width: 15%;
 height: 20%;
 
-
 }
+
+
 
 
 /*-- tags--*/
 
 .info-bottom{
 width: 100%;
-height: 25%;
+height: 30%;
 font-family: sans-serif;
-font-size: 75%;
+font-size: 1.6vh;
 color: var(--infoTextColor#252425);
 font-family: var(--text);
 background: var(--background);
 display:flex;
 flex-direction: column;
+
 }
 
-.info-bottom ul{
-  width:100;
-  height: 40%;
+.info-bottom .rights{
+  width:100%;
+  height: 35%;
+
 }
+
+.rights ul {
+  width:80%;
+  height: 7vh;
+
+
+}
+
+
+
+.rights li {
+  text-align: center;
+}
+
+
 
 .info-bottom .tags{
   background:var( --tagsBackground);
   width:100%;
-  height: 75%;
+  height: 70%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .info-bottom .tags li{
-  position: relative;
-  top:5%;
-  width:15%; 
-  font-size: 85%;
-  color: var(--tags);
-  font-family: var(--text);
-  }
+width:18%;
+height: 25%; 
+font-size: 1.4vh;
+color: var(--tags);
+font-family: var(--text)
+}
+
 /*-- Footer end--*/ 
 
 }
