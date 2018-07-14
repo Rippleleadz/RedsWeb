@@ -80,296 +80,12 @@ a:hover{
   color: var(--a-linkHover) !important;
 }
 
-/*-- Showcase Start--*/
-
-@media screen and (max-width: 750px){ 
-
-#showcase {
-    position: absolute;
-    width:100%;
-    height: 91%;
-    overflow: hidden;
-}
-
-
-#showcase .bg-image{
-    display:none;
-
-}
-
-
-#showcase .s-bg-image{
-    width:100%;
-    height:100%;
-}
-
-
-#showcase .container{
- position: absolute;
- top:5%;
- height: 95%;
- display:flex;
- flex-direction: column;
-
-
-}
-
-#showcase .logo{
-    position: relative;
-    left:5%;
-    width:30%;
-    
-
-}
-
-#showcase h1{
-  position: relative;
-  top:20%;
-  flex-basis:97%;
-  font-family: var(--font);
-  font-size: 5vh;
-  text-transform: capitalize;
-  align-self: center;
-}
-
-#showcase p{
-  position: relative;
-  width:96%;
-  margin: auto;
-  text-align: left;
-  font-family: sans-serif;
-  font-size: 2.3vh;
-  flex-basis:100%;
-  background: var(--pBackground);
-  overflow: hidden;
-}
-
-
-/*-- Showcase End--*/
-
-/*-- Section-a Start--*/
-
-
-#section-a{
-    position: absolute;
-    top: 92%;
-    height:7vh;
-    width:100%;
-    overflow:hidden;
-    background: var(--background);
-
-
-}
-
-
-#section-a ul{
-    width:98%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    
-}
-
-#section-a li{
-    position: relative;
-    width:50%;
-    height:82%;
-    display: flex;
-    
-  }
-
-
-#section-a ul li a{
-  width:90%;
-  height:75%;
-  font-family: var(--font);
-  background:var(--navbarBackground);
-  border-radius: 5px;
-  border: 2px solid var(--navbarBorder);
-  border-top: 8px solid var(--navbarBorder);
-  font-size: 2vh;
-
-}
-
-
-/*-- Section-a Finish--*/
-
-
-/*-- Section-c Start--*/
-#section-c{
-    position: absolute;
-    top:100.7%;
-    width:100%;
-    height:10%;
-    background:var(--section-c);
-    display:flex;
-    justify-content: center;
-    overflow: hidden;
-}
-
-
-#section-c .s-brand{
-    position: relative;
-    height: 50%;
-    align-self: center;
-    animation: moving-banner 29s linear infinite;
-
-}
-
-#section-c .brand{
-   display: none;
-
-}
-
-
-@keyframes moving-banner {
-
-  0%{
-    left: -104%;
-  }
-  100%{
-    left: 100%;
-  }
-
-}
-/*-- Section-c End--*/
-
-
-/* footer start */
-    
-
-#section-footer{
-  position: absolute;
-  width: 100%;
-  top:110.7%;
-  height:75%;
-  background:var(--section-footer);
-  overflow: hidden;
-}
-
-.info{
-width:100%;
-height: 75%;
-margin-right:1%;
-display:flex;
-flex-direction: row;
-flex-wrap: wrap;
-align-content: center;
-justify-content: flex-end;
-
-}
-
-#section-footer .reds a{
-  color: var(--linkColor);
-  
- 
- }
- 
- 
-
-#section-footer ul, li, a {
-background-color: inherit;
-
-
-}
-
-#section-footer .reds, .services, .location, .contacts{
-  width:29%;
-  height: 40%;
-  margin-right: 2%;
-font-family: var(--font);
-
-
-
-}
-
-#section-footer .reds, .services, .location, .contacts{
-  font-size: 2vh;
-  
-}
-
-#section-footer .reds, .services, .location,  li{
-  text-align: left;
-  
-}
-
-
-
-#section-footer .contacts p{
- padding:7%;
- 
-}
-
-
-
-#section-footer .info .box{
-width: 25%;
-height: 20%;
-
-}
-
-/*-- tags--*/
-.info-bottom{
-  width: 100%;
-  height: 30%;
-  font-family: sans-serif;
-  font-size: 1.6vh;
-  color: var(--infoTextColor#252425);
-  font-family: var(--text);
-  background: var(--background);
-  display:flex;
-  flex-direction: column;
-
-  }
-  
-  .info-bottom .rights{
-    width:100%;
-    height: 35%;
-
-  }
-  
-  .rights ul {
-    width:80%;
-    height: 7vh;
-
-  
-  }
-  
-
-  
-  .rights li {
-    text-align: center;
-}
-  
-  
-  
-  .info-bottom .tags{
-    background:var( --tagsBackground);
-    width:100%;
-    height: 70%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  
-  .info-bottom .tags li{
-  width:20%;
-  height: 25%; 
-  font-size: 1.4vh;
-  color: var(--tags);
-  font-family: var(--text);
-  }
-
-/*-- Footer end--*/ 
-
- }
 
 
 /*--Media--*/
 
 
-@media(min-width:768px){
+@media screen and (min-width:768px){
 
     #showcase {
         position: absolute;
@@ -685,3 +401,307 @@ font-family: var(--text)
 
 }
   
+
+
+@media screen and (max-width: 768px) {
+ 
+  /*-- Showcase Start--*/
+
+#showcase {
+  position: absolute;
+  width:100%;
+  height: 91%;
+  overflow: hidden;
+}
+
+
+#showcase .bg-image{
+  display:none;
+
+}
+
+
+#showcase .s-bg-image{
+  width:100%;
+  height:100%;
+}
+
+
+#showcase .container{
+position: absolute;
+top:5%;
+height: 95%;
+display:flex;
+flex-direction: column;
+
+
+}
+
+#showcase .logo{
+  position: relative;
+  left:5%;
+  width:30%;
+  
+
+}
+
+#showcase h1{
+position: relative;
+top:20%;
+flex-basis:97%;
+font-family: var(--font);
+font-size: 5vh;
+text-transform: capitalize;
+align-self: center;
+}
+
+#showcase p{
+position: relative;
+width:96%;
+margin: auto;
+text-align: left;
+font-family: sans-serif;
+font-size: 2.3vh;
+flex-basis:100%;
+background: var(--pBackground);
+overflow: hidden;
+}
+
+
+/*-- Showcase End--*/
+
+/*-- Section-a Start--*/
+
+
+#section-a{
+  position: absolute;
+  top: 92%;
+  height:7vh;
+  width:100%;
+  overflow:hidden;
+  background: var(--background);
+
+
+}
+
+
+#section-a ul{
+  width:98%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  
+}
+
+#section-a li{
+  position: relative;
+  width:50%;
+  height:82%;
+  display: flex;
+  
+}
+
+
+#section-a ul li a{
+width:90%;
+height:75%;
+font-family: var(--font);
+background:var(--navbarBackground);
+border-radius: 5px;
+border: 2px solid var(--navbarBorder);
+border-top: 8px solid var(--navbarBorder);
+font-size: 2vh;
+
+}
+
+
+/*-- Section-a Finish--*/
+
+
+/*-- Section-c Start--*/
+#section-c{
+  position: absolute;
+  top:100.7%;
+  width:100%;
+  height:10%;
+  background:var(--section-c);
+  display:flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+#section-c .s-brand{
+  position: relative;
+  height: 50%;
+  align-self: center;
+  animation: moving-banner 29s linear infinite;
+
+}
+
+#section-c .brand{
+ display: none;
+
+}
+
+
+@keyframes moving-banner {
+
+0%{
+  left: -104%;
+}
+100%{
+  left: 100%;
+}
+
+}
+/*-- Section-c End--*/
+
+
+/* footer start */
+  
+
+#section-footer{
+position: absolute;
+width: 100%;
+top:110.7%;
+height:75%;
+background:var(--section-footer);
+overflow: hidden;
+}
+
+.info{
+  width:100%;
+  height: 75%;
+  margin-right:1%;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  
+  }
+  
+  #section-footer .reds a{
+    color: var(--linkColor);
+    
+   
+   }
+   
+   
+  
+  #section-footer ul, li, a {
+  background-color: inherit;
+  
+  
+  }
+  
+  #section-footer .reds, .services, .location, .contacts{
+    width:26%;
+    font-size: 2vh;
+  font-family: var(--font);
+  
+  
+  }
+  
+  
+  #section-footer .reds, .services, .location,  .contacts {
+  height: 40%;
+    
+  }
+  
+
+
+  #section-footer .reds, .services, .location,  li{
+    text-align: left;
+    align-content: space-around;
+    
+  }
+  
+  
+  
+  #section-footer .contacts p{
+   padding:7% 0%;
+   
+  }
+  
+  
+  #section-footer .contacts{
+      width:30%;
+   margin-left: 60%;
+   }
+   
+   
+  
+  #section-footer .info .box{
+  width: 30%;
+  height: 20%;
+  
+}
+  
+
+  
+  
+  /*-- tags--*/
+  
+  .info-bottom{
+  width: 100%;
+  height: 30%;
+  font-family: sans-serif;
+  font-size: 1.6vh;
+  color: var(--infoTextColor#252425);
+  font-family: var(--text);
+  background: var(--background);
+  display:flex;
+  flex-direction: column;
+
+  }
+  
+  .info-bottom .rights{
+    width:100%;
+    height: 35%;
+
+  }
+  
+  .rights ul {
+    width:50%;
+    height: 7vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+  
+  }
+  
+
+  
+  .rights li {
+    text-align: center;
+}
+  
+  
+  
+  .info-bottom .tags{
+    background:var( --tagsBackground);
+    width:100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .info-bottom .tags li{
+  width:20%;
+  height: 25%; 
+  font-size: 1.4vh;
+  color: var(--tags);
+  font-family: var(--text);
+  text-align: center;
+  }
+  
+  /*-- Footer end--*/ 
+
+}
