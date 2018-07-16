@@ -174,7 +174,7 @@ a:hover{
   
   .container .logo{
     position: absolute;
-    width:24%;
+    width:20vh;
     height: 5vh;
     left:6%;
     top:4%;
@@ -226,11 +226,12 @@ a:hover{
   .nav ul{
     width:95%;
     height: 100%;
-    margin-top:2%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+
    
     
   }
@@ -269,11 +270,6 @@ a:hover{
   
   }
   
-  #section-a a:hover{
-    background-color: var(--navMouseOver);
-    border-radius: 5px;
-  
-  }
   
   .style1{
     width:75%;

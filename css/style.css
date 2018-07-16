@@ -89,45 +89,892 @@
     
 
 
+
+ 
+   
+    /*-- Showcase Start--*/
   
+  
+  #showcase {
+      width:100%;
+      height: 70%;
+      height: 70vh;  
+      overflow: hidden; 
+  
+  }
+  
+  #showcase .container{
+      position: absolute;
+      top:0%;
+      width:100%;
+      height: 70%;
+      height: 70vh;
+     display: flex;
+     flex-direction: column;
+     
+  }
+  
+  
+  #showcase .bg-image{
+      display:none;
+   
+  }
+  
+  
+  #showcase .s-bg-image{
+    width:100%;
+    height: 100%;
+  
+  }
+  
+  
+  #showcase .s-bg-image{
+  
+      animation: zoom 10s linear forwards;
+  
+  }
+  
+  
+  @keyframes zoom{
+      0%{
+          transform: scale(1);
+      }
+       100%{
+          transform: scale(1.5);
+      }
+  }
+  
+  
+  #showcase .logo{
+    width:30vw;
+    height: auto;
+    align-self: flex-start;
+    margin: 3% 0% 0% 3%;   
+  
+  }
+  
+  #showcase h1{
+    width:97%;
+    font-family: var(--font);
+    font-size: 8vh;
+    margin-top: 1em;
+    text-transform: capitalize;
+    align-self: center;
+     
+  }
+  
+  #showcase p{
+      width:49%;
+    font-family: sans-serif;
+    font-size: 2.5vh;
+    align-self: center;
+  
+  }
+  
+  
+  #showcase .btn{
+      width:20%;
+      height: 2%;
+      height: 3vh;
+      padding: 4% 0%;
+      margin-top:7%;
+      font-size: 1.5vh;
+      align-self: center;
+  }
+  
+   .down-arrow{
+     display:none;
+     }
+  
+  
+  
+  /*-- Showcase End--*/
+  
+  
+  
+  /*-- Section-a Start--*/
+  
+  
+  
+  #section-a {
+    position: absolute;
+    top:70%;
+    width:100%;
+    height: 40%;
+    height: 40vh;
+    background: var(--background);
+    overflow: hidden;
+  
+  }
+  
+  
+  #section-a ul{
+    width:95%;
+    height: 27vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:  space-around;
+    align-items: center;
+   
+    
+  }
+  
+  #section-a li{
+    width:35%;
+    height:25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+  
+  
+  
+  
+  }
+  
+  
+  #section-a a{
+    width:100%;
+    height: 100%;
+    font-family: var(--font);
+    background:var(--navbarBackground);
+    border-radius: 5px;
+    border: 2px solid var(--navbarBorder);
+    border-top: 8px solid var(--navbarBorder);
+    font-size: 2.5vh;
+    text-transform: uppercase;
+  
+  }
+  
+  
+  #section-a a:hover{
+    background-color: var(--navMouseOver);
+    border-radius: 5px;
+  
+  }
+ 
+  
+  /*-- Section-a Finish--*/
+  
+  
+  /*-- Section-b Start--*/
+  
+  #section-b {
+       position: absolute;
+      width:100%;
+      top: 101%;
+      height:104%;
+      overflow:hidden;
+  
+  
+  }
+  
+  
+  #section-b .container{
+      position: absolute;
+      width:100%;
+      height: 100%;
+  }
+  
+  #section-b .bg-image{
+      position: absolute;
+      background:url(../images/s-bg-grey.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height:100%;
+      width:100%;
+  }
+  
+  #section-b .s-cloud1{
+      position: absolute;
+      width:100%;
+      height:45%;
+      right:65%;
+      animation: moving-clouds 20s linear infinite;
+  
+  
+  
+  }
+  
+  #section-b .s-cloud2{
+      position: absolute;
+      width:80%;
+      height: 45%;
+      right:1%;
+      animation: moving-clouds 15s linear infinite;
+  
+  
+  }
+  
+  
+  #section-b .s-car1{
+      position: absolute;
+      width: 62v;
+      height: auto;
+      top:72%;
+      right:-50%;
+      animation: moving-car1 15s  linear infinite;
+  
+  
+  }
+  
+  #section-b .s-car2{
+      position: absolute;
+      width: 30vw;
+      height: auto;
+      top:73%;
+      right:-55%;
+      animation: moving-car2 15s  linear infinite;
+  
+   }
+  
+  
+  #section-b .cloud1{
+      position: absolute;
+      width:100%;
+      height:45%;
+      right:65%;
+      display: none;
+  
+  
+  }
+  
+  #section-b .cloud2{
+      position: absolute;
+      width:80%;
+      height: 45%;
+      right:1%;
+      display: none;
+  
+  
+  }
+  
+  
+  #section-b .car1{
+      position: absolute;
+      width: 50%;
+      top:72%;
+      right:2%;
+      display: none;
+  
+  
+  }
+  
+  #section-b .car2{
+      position: absolute;
+      width: 40%;
+      top:73%;
+      right:45%;
+      display: none;
+  
+   }
+  
+  #section-b .container2{
+   width: 90%;
+   height:80%;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+  
+  }
+  
+#section-b  .btn{
+width:25%;
+height: 11%;
+height: 9vh;
+font-size: 2.5vh;
+margin-left: 11%;
 
-
-/*--Media--*/
-
-@media screen and (min-width:769px){
-
-    #showcase {
-        position: absolute;
-        width:100%;
-        height: 100%;  
-        overflow: hidden; 
+}
+  
+  #section-b h1{
+      font-family: var(--font);
+      font-size: 7vh;
+      color:black;
+      text-transform: uppercase;
+      align-self: flex-start;
+  
+  }
+  
+  #section-b p{
+      width:70%;
+      font-size: 2vh;
+      color: black;
+      text-align: left;
+      align-self: flex-start;
+     
+      
+  }
+  
+  
+   .up-arrow{
+      display:none;
+      
+      }
+  
+  @keyframes moving-clouds {
+  from{
+    right: -110%;
+  }
+  to{
+    right: 100%;
+  }
+  }
+  
+  
+  @keyframes moving-car1 {
+    0% {
+      transform:scale(.3);
+       right:-66%  ;
+    }
+    50%{
+      right:50%;
+  
+    }
+  
+  
+  }
+  
+  @keyframes moving-car2 {
+    0% {
+      transform:scale(.3);
+       right:-50%  ;
+    }
+    50%{
+      right:40%;
+  
+    }
+  }
+  
+  
+  
+  
+  /*-- Section-b End--*/
+  
+  /*-- Section-c Start--*/
+  
+  
+  #section-c{
+      position: absolute;
+      top:205%;
+      width:100%;
+      height:10%;
+      background:var(--section-c);
+      display:flex;
+      justify-content: center;
+      overflow: hidden;
+  }
+  
+  
+  #section-c .s-brand{
+      position: relative;
+      height: 50%;
+      align-self: center;
+      animation: moving-banner 29s linear infinite;
+  
+  }
+  
+  #section-c .brand{
+     display: none;
+  
+  }
+  
+  
+  @keyframes moving-banner {
+  
+    0%{
+      left: -104%;
+    }
+    100%{
+      left: 100%;
+    }
+  
+  }
+  /*-- Section-c End--*/
+  
+  
+  /* footer start */
+      
+  
+  #section-footer{
+      position: absolute;
+      width: 100%;
+      top:215%;
+      height:100%;
+      background:var(--section-footer);
+      overflow: hidden;
+    }
+    
+    .info{
+    width:100%;
+    height: 75%;
+    margin-right:1%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
     
     }
     
-    #showcase .container{
-        position: absolute;
-        top:5%;
-        width:100%;
-        height: 100%;
-       display: flex;
-       flex-direction: column;
+    #section-footer .reds a{
+      color: var(--linkColor);
       
-       
+     
      }
+     
+     
+    
+    #section-footer ul, li, a {
+    background-color: inherit;
     
     
-    #showcase .bg-image{
-        width:100%;
-        height:100%;
+    }
+    
+    #section-footer .reds, .services, .location, .contacts{
+      width:26%;
+      font-size: 2vh;
+    font-family: var(--font);
+    
+    
+    }
+    
+    
+    #section-footer .reds, .services, .location,  .contacts {
+    height: 40%;
+      
+    }
+    
+  
+  
+    #section-footer .reds, .services, .location,  li{
+      text-align: left;
+      align-content: space-around;
+      
+    }
+    
+    
+    
+    #section-footer .contacts p{
+     padding:7% 0%;
      
     }
     
     
-    #showcase .s-bg-image{
-         display: none;
+    #section-footer .contacts{
+        width:40%;
+     margin-left: 45%;
+     }
+     
+     
+    
+    #section-footer .info .box{
+    width: 25%;
+    height: auto;
+    padding-left:3%; 
+
+    
+  }
+    
+  
+    
+    
+    /*-- tags--*/
+    
+    .info-bottom{
+    width: 100%;
+    height: 30%;
+    font-family: sans-serif;
+    font-size: 1.6vh;
+    color: var(--infoTextColor#252425);
+    font-family: var(--text);
+    background: var(--background);
+    display:flex;
+    flex-direction: column;
+  
     }
     
+    .info-bottom .rights{
+      width:100%;
+      height: 35%;
+  
+    }
     
+    .rights ul {
+      width:50%;
+      height: 7vh;
+      display:flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+  
+    
+    }
+    
+  
+    
+    .rights li {
+      text-align: center;
+  }
+    
+    
+    
+    .info-bottom .tags{
+      background:var( --tagsBackground);
+      width:100%;
+      height: 70%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+    }
+  
+    .info-bottom .tags li{
+    width:20%;
+    height: 25%; 
+    font-size: 1.4vh;
+    color: var(--tags);
+    font-family: var(--text);
+    text-align: center;
+    }
+    
+    /*-- Footer end--*/ 
+
+
+
+
+  @media screen and (min-width: 568px) {
+  
+/*-- Showcase Start--*/
+
+
+#showcase {
+    position: relative;
+    width:100%;
+    height: 100%;
+    height: 100vh;  
+    overflow: hidden; ; 
+}
+
+#showcase .container {
+    width:100%;
+    height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+     
+ }
+
+
+#showcase .bg-image{
+    display:none;
+ 
+}
+
+
+
+#showcase .s-bg-image{
+    width: 100%;
+    height: auto;
+    animation: zoom 10s linear forwards;
+
+}
+
+
+@keyframes zoom{
+    0%{
+        transform: scale(1);
+    }
+     100%{
+        transform: scale(1.5);
+    }
+}
+
+
+#showcase .logo{
+    width:13vw;
+    height: auto;
+    align-self: flex-start;
+    padding: 5% 0% 0% 3%;  
+}
+
+
+#showcase h1{
+    width:50%;
+  font-family: var(--font);
+  font-size: 15vh;
+  margin-top:0%;
+   
+}
+
+
+#showcase p{
+    width:49%;
+  font-family: sans-serif;
+  font-size: 5.3vh;
+  align-self: center;
+  padding:0%;
+
+}
+
+
+#showcase .btn{
+    width:10%;
+    height: auto;
+    margin:1% 0% 16% 0%;
+    font-size: 2.5vh;
+    text-align: center;
+    align-self: center;
+}
+
+  
+#showcase li{
+    border-radius: 50%;
+    height:27%;
+    width:28px;
+    background:var(--circles);
+     }
+
+
+
+/*-- Showcase End--*/
+
+
+
+/*-- Section-a Start--*/
+
+#section-a{
+position: absolute;
+top: 100%;
+height:30%;
+width:100%;
+overflow:hidden;
+background: var(--background);
+
+
+}
+
+
+#section-a ul{
+position: relative;
+width:98%;
+height: 100%;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+
+}
+
+#section-a li{
+position: relative;
+width:50%;
+height:80%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+
+
+
+}
+
+#section-a a{
+position: relative;
+width:90%;
+height: 70%;
+font-family: var(--font);
+background:var(--section-d);
+border-radius: 5px;
+border: 2px solid var(--section-c);
+border-top: 8px solid var(--section-c);
+font-size: 1.3em;
+
+
+}
+
+#section-a a:hover{
+background-color: var(--navMouseOver);
+border-radius: 5px;
+
+}
+/*-- Section-a Finish--*/
+
+
+/*-- Section-b Start--*/
+
+#section-b {
+position: absolute;
+width:100%;
+top: 134.0%;
+height:210%;
+
+}
+
+
+
+#section-b .container2{
+position: absolute;
+width:70%;
+height:420px;
+top:13%;
+left:6%;
+
+}
+
+#section-b  .btn{
+width:20%;
+height: 10%;
+height: 10vh;
+font-size: 4vh;
+margin-left: 18%;
+
+}
+
+#section-b h1{
+font-family: var(--font);
+font-size: 17vh;
+
+}
+
+#section-b p{
+    width:70%;
+    font-size: 5vh;
+   
+}
+
+
+@keyframes moving-car1 {
+    0% {
+      transform:scale(.3);
+       right:-66%  ;
+    }
+    50%{
+      right:20%;
+  
+    }
+  
+  
+  }
+  
+  @keyframes moving-car2 {
+    0% {
+      transform:scale(.3);
+       right:-50%  ;
+    }
+    50%{
+      right:10%;
+  
+    }
+  }
+
+
+/*-- Section-b End--*/
+
+/*-- Section-c Start--*/
+
+#section-c{
+position: absolute;
+width:100%;
+top:344%;
+height:24%;
+
+}
+
+
+#section-c .s-brand{
+   display:none;
+}
+
+
+
+#section-c .brand{
+    position: relative;
+    width:75%;
+    height: auto;
+    height: 12vh;
+   align-self: center;
+   display: block;
+   animation: moving-banner 29s linear infinite;
+}
+
+
+/*-- Section-c End--*/
+
+
+/* footer start */
+
+
+#section-footer{
+position: absolute;
+top:368%;
+width: 100%;
+height:150%;
+}
+
+
+#section-footer .reds, .services, .location, .contacts{
+  font-size: 4vh;
+}
+
+
+#section-footer .info .box{
+width: 13%;
+height: auto;
+padding: 0% 2% 0% 0%;
+
+}
+
+
+
+
+/*-- tags--*/
+
+.info-bottom{
+font-size: 3.5vh;
+
+}
+
+.rights ul {
+  height: 8vh;
+
+}
+
+.info-bottom .tags li{
+font-size: 4vh;
+
+}
+  
+  /*-- Footer end--*/ 
+
+
+}
+    
+
+
+/*--Media--*/
+
+@media screen and (min-width:1024px){
+
+       
+    #showcase .s-bg-image{
+        display:none;
+     
+    }
+
+
+    #showcase .bg-image{
+        width:100%;
+        height: 100%;
+        display:block;
+     
+    }
+    
+        
     #showcase .bg-image{
     
         animation: zoom 10s linear forwards;
@@ -144,89 +991,70 @@
         }
     }
     
-    
+
     #showcase .logo{
-      width:10%;
-      margin-left: 5%;
-    
-      
-    
-        
-    
+        width:10vw;
+        height: auto;
+        align-self: flex-start;
+        padding: 1% 0% 0% 3%;  
     }
-    #showcase h1{
-        width:97%;
-      font-family: var(--font);
-      font-size: 550%;
-      margin-top: 1em;
-      text-transform: capitalize;
-      align-self: center;
-      
     
     
+      #showcase h1{
+      width:50%;
+      font-size: 13vh;
+      margin-top:0%;
+       
     }
+    
     
     #showcase p{
         width:49%;
-    
-      font-family: sans-serif;
-      font-size: 200%;
-      align-self: center;
-    
+      font-size: 4vh;    
     }
-
+    
+    
     #showcase .btn{
-        width:10%;
-        padding: 1%;
-        font-size: 110%;
-        margin-top: 1%;
-        text-align: center;
-        align-self: center;
-       
+        padding: 2% 0%;
+        margin:1% 0% 0% 0%;
+     
     }
-
-    #showcase .down-arrow{
-    position: relative;
+    
+    
+     #showcase .down-arrow{
+     position: relative;
      width:3%;
      height: 8%;
-     margin-top:0%;
      align-self: center;
      animation: down-arrow 3s infinite ease;
-    
+     display:block;
     }
+
+    
 
     @keyframes down-arrow {
 
-        0%{top:0%;} 
+        0%{top:-5%;} 
         
-        50%{top: 15%;}
+        50%{top: 5%;}
 
-        100%{top: 0%;} 
+        100%{top: -5%;} 
       
       }
    
 
-      #showcase .select{
-      position: relative;
-      width:15%;
-      height: 15%;
-      bottom: 10%;
-      left:43%;
-      background:none;
-
-    }
-
-    #showcase ul{
-     height: 50%;
-     display: flex;
-     flex-direction: row;
-     align-items: flex-end;
-     background:none;
-
-
-  
-      }
-
+      #showcase ul{
+        width:15%;
+        height: 8%;
+        margin-bottom: 1%;
+        display:flex;
+        flex-direction: row;
+        background:none;
+        justify-content: space-around;
+        align-items: center;
+       
+       }
+       
       
     #showcase li{
         border-radius: 50%;
@@ -243,15 +1071,15 @@
 
 /*-- Section-a Start--*/
 
+
 #section-a{
     position: absolute;
-    top: 101%;
+    top: 102%;
     height:11%;
     width:100%;
     overflow:hidden;
     background: var(--background);
-  
-  
+   
   }
   
   
@@ -266,13 +1094,9 @@
   
   #section-a li{
     position: relative;
-    width:50%;
+    width:25%;
     height:100%;
     display: flex;
-    
-  
-  
-  
   }
   
   #section-a a{
@@ -286,8 +1110,7 @@
   border: 2px solid var(--section-c);
   border-top: 8px solid var(--section-c);
   font-size: 2em;
-  
-  
+
   }
   
   #section-a a:hover{
@@ -295,6 +1118,8 @@
     border-radius: 5px;
   
   }
+
+
 /*-- Section-a Finish--*/
 
 
@@ -303,10 +1128,8 @@
 #section-b {
      position: absolute;
     width:100%;
-    top: 108.6%;
+    top: 115%;
     height:90%;
-   overflow: hidden;
-
 }
 
 #section-b .s-cloud1{
@@ -359,7 +1182,7 @@
     height:60%;
     right:0%;
    animation: moving-clouds 50s linear infinite;
-
+   display:block;
 }
 
 #section-b .cloud2{
@@ -368,7 +1191,7 @@
     height: 45%;
     right:44%;
    animation: moving-clouds 80s linear infinite;
-
+   display:block;
 }
 
 
@@ -378,6 +1201,7 @@
     top:65%;
     right:2%;
     animation: moving-car1  12s  linear infinite;
+    display:block;
 }
 
 #section-b .car2{
@@ -386,7 +1210,7 @@
     top:64%;
     right:23%;
     animation: moving-car2  12s  linear infinite;
-
+    display:block;
 
  }
 
@@ -435,37 +1259,38 @@
 
 #section-b .container2{
     position: absolute;
-    width:350px;
+    width:30%;
     height:420px;
     top:13%;
     left:6%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-
-
 
     }
 
-#section-b  .btn{
-  width:30%;
-  margin-top:4%;
-
-  
-}
+    #section-b  .btn{
+        width:20%;
+        height: 10%;
+        height: 7vh;
+        font-size: 1.5vh;
+        align-self: start;
+        
+        }
 
 #section-b h1{
     font-family: var(--font);
-    font-size: 370%;
+    font-size: 8vh;
     color:black;
     text-transform: uppercase;
 
 }
 
 #section-b p{
-    width:85%;
+    width:99%;
     color: black;
-    font-size: 115%;
+    font-size: 2.4vh;
     text-align: start;
 }
 
@@ -478,6 +1303,7 @@
      bottom: 5%;
      align-self: center;
      animation: up-arrow 3s infinite ease;
+     display:block;
     
     }
 
@@ -502,38 +1328,10 @@
     width:100%;
     top:199.5%;
     height:16%;
-    background:var(--section-c);
-    display:flex;
-    justify-content: center;
-
-    overflow: hidden;
 }
 
 
-#section-c .s-brand{
-    position: relative;
-    height: 50%;
-    align-self: center;
-    animation: moving-banner 29s linear infinite;
 
-}
-
-#section-c .brand{
-   display: none;
-
-}
-
-
-@keyframes moving-banner {
-
-  0%{
-    left: -104%;
-  }
-  100%{
-    left: 100%;
-  }
-
-}
 /*-- Section-c End--*/
 
 
@@ -544,673 +1342,143 @@
     position: absolute;
     width: 100%;
     top:216.5%;
-    height:75%;
+    height:100%;
     background:var(--section-footer);
     overflow: hidden;
   }
   
   .info{
-  width:100%;
-  height: 75%;
-  margin-right:1%;
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: flex-end;
-  
-  }
-  
-  #section-footer .reds a{
-    color: var(--linkColor);
-    
-   
-   }
-   
-   
-  
-  #section-footer ul, li, a {
-  background-color: inherit;
-  
-  
-  }
-  
-  #section-footer .reds, .services, .location, .contacts{
-    width:29%;
-    height: 40%;
-    margin-right: 2%;
-  font-family: var(--font);
-  
-  
-  
-  }
-  
-  #section-footer .reds, .services, .location, .contacts{
-    font-size: 2vh;
-    
-  }
-  
-  #section-footer .reds, .services, .location,  li{
-    text-align: left;
-    
-  }
-  
-  
-  
-  #section-footer .contacts p{
-   padding:7%;
-   
-  }
-  
-  
-  
-  #section-footer .info .box{
-  width: 15%;
-  height: 20%;
-
-  }
-  
-
-  
-  
-  /*-- tags--*/
-  
-  .info-bottom{
-  width: 100%;
-  height: 30%;
-  font-family: sans-serif;
-  font-size: 1.6vh;
-  color: var(--infoTextColor#252425);
-  font-family: var(--text);
-  background: var(--background);
-  display:flex;
-  flex-direction: column;
-
-  }
-  
-  .info-bottom .rights{
     width:100%;
-    height: 35%;
-
-  }
-  
-  .rights ul {
-    width:80%;
-    height: 7vh;
-
-  
-  }
-  
-
-  
-  .rights li {
-    text-align: center;
-}
-  
-  
-  
-  .info-bottom .tags{
-    background:var( --tagsBackground);
-    width:100%;
-    height: 70%;
-    display: flex;
+    height: 75%;
+    margin-right:1%;
+    display:flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
-  }
-  
-  .info-bottom .tags li{
-  width:18%;
-  height: 25%; 
-  font-size: 1.4vh;
-  color: var(--tags);
-  font-family: var(--text)
-  }
-  
-  /*-- Footer end--*/ 
-  
-  }
-
-
-  @media screen and (max-width: 768px) {
-   
-  /*-- Showcase Start--*/
-
-
-#showcase {
-    position: absolute;
-    top:8%;
-    width:100%;
-    height: 92%;  
-    overflow: hidden; 
-
-}
-
-#showcase .container{
-    position: absolute;
-    top:3%;
-    width:100%;
-    height: 100%;
-   display: flex;
-   flex-direction: column;
-   
-}
-
-
-#showcase .bg-image{
-    display:none;
- 
-}
-
-
-#showcase .s-bg-image{
-    width:100%;
-    height:100vh;
-
-
-}
-
-
-#showcase .s-bg-image{
-
-    animation: zoom 10s linear forwards;
-
-}
-
-
-@keyframes zoom{
-    0%{
-        transform: scale(1);
-    }
-     100%{
-        transform: scale(1.5);
-    }
-}
-
-
-#showcase .logo{
-    position: absolute;
-    width:24%;
-    height: 5vh;
-    left:6%;
-    top:1%;
-  
-}
-
-#showcase h1{
-    width:97%;
-  font-family: var(--font);
-  font-size: 8vh;
-  margin-top: 2em;
-  text-transform: capitalize;
-  align-self: center;
-  
-
-
-}
-
-#showcase p{
-    width:49%;
-
-  font-family: sans-serif;
-  font-size: 2.5vh;
-  align-self: center;
-
-}
-
-
-#showcase .btn{
-    width:20%;
-    padding: 2% 0%;
-    margin-top:2%;
-    font-size: 1.4vh;
-    text-align: center;
-    align-self: center;
-}
-
- .down-arrow{
-   display:none;
-   }
-
-
-
-/*-- Showcase End--*/
-
-
-
-/*-- Section-a Start--*/
-
-
-#section-a{
-    position: fixed;
-    top: 0%;
-    height:8%;
-    width:100%;
-    overflow:hidden;
-    background: var(--background);
-    z-index: 1;
-
-
-}
-
-
-#section-a ul{
-    width:95%;
-    height: 100%;
-    display: flex;
-   
     
-}
-
-#section-a li{
-    width:30%;
-    height:100%;
-    display: flex;
-    align-items: center;
-
-
-
-
-}
-
- #section-a a{
-  width:93%;
-  height: 50%;
-  font-family: var(--font);
-  background:var(--navbarBackground);
-  border-radius: 5px;
-  border: 2px solid var(--navbarBorder);
-  border-top: 8px solid var(--navbarBorder);
-  font-size: 2vh;
-
-}
-
-#section-a a:hover{
-    background-color: var(--navMouseOver);
-    border-radius: 5px;
-
-}
-
-
-
-/*-- Section-a Finish--*/
-
-
-/*-- Section-b Start--*/
-
-#section-b {
-     position: absolute;
-    width:100%;
-    top: 101%;
-    height:104%;
-    overflow:hidden;
-
-
-}
-
-
-#section-b .container{
-    position: absolute;
-    width:100%;
-    height: 100%;
-}
-
-#section-b .bg-image{
-    position: absolute;
-    background:url(../images/s-bg-grey.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height:100%;
-    width:100%;
-}
-
-#section-b .s-cloud1{
-    position: absolute;
-    width:100%;
-    height:45%;
-    right:65%;
-    animation: moving-clouds 20s linear infinite;
-
-
-
-}
-
-#section-b .s-cloud2{
-    position: absolute;
-    width:80%;
-    height: 45%;
-    right:1%;
-    animation: moving-clouds 15s linear infinite;
-
-
-}
-
-
-#section-b .s-car1{
-    position: absolute;
-    width: 55%;
-    top:72%;
-    right:-50%;
-    animation: moving-car1 15s  linear infinite;
-
-
-}
-
-#section-b .s-car2{
-    position: absolute;
-    width: 40%;
-    top:73%;
-    right:-55%;
-    animation: moving-car2 15s  linear infinite;
-
- }
-
-
-#section-b .cloud1{
-    position: absolute;
-    width:100%;
-    height:45%;
-    right:65%;
-    display: none;
-
-
-}
-
-#section-b .cloud2{
-    position: absolute;
-    width:80%;
-    height: 45%;
-    right:1%;
-    display: none;
-
-
-}
-
-
-#section-b .car1{
-    position: absolute;
-    width: 50%;
-    top:72%;
-    right:2%;
-    display: none;
-
-
-}
-
-#section-b .car2{
-    position: absolute;
-    width: 40%;
-    top:73%;
-    right:45%;
-    display: none;
-
- }
-
-#section-b .container2{
- width: 90%;
- height:80%;
- margin: auto;
- display: flex;
- flex-direction: column;
- justify-content: center;
-
-}
-
-#section-b  .btn{
-width: 20%;
-margin:12% 0% 0% 20%;
-}
-
-#section-b h1{
+    }
+    
+    #section-footer .reds a{
+      color: var(--linkColor);
+      
+     
+     }
+     
+     
+    
+    #section-footer ul, li, a {
+    background-color: inherit;
+    
+    
+    }
+    
+    #section-footer .reds, .services, .location, .contacts{
+      width:26%;
+      font-size: 95%;
+      font-size: 2.5vh;
     font-family: var(--font);
-    font-size: 7vh;
-    color:black;
-    text-transform: uppercase;
-    align-self: flex-start;
-
-}
-
-#section-b p{
-    width:70%;
-    font-size: 1.7vh;
-    color: black;
-    text-align: left;
-   
     
-}
-
-
- .up-arrow{
-    display:none;
     
     }
-
-@keyframes moving-clouds {
-from{
-  right: -110%;
-}
-to{
-  right: 100%;
-}
-}
-
-
-@keyframes moving-car1 {
-  0% {
-    transform:scale(.3);
-     right:-66%  ;
-  }
-  50%{
-    right:50%;
-
-  }
-
-
-}
-
-@keyframes moving-car2 {
-  0% {
-    transform:scale(.3);
-     right:-50%  ;
-  }
-  50%{
-    right:40%;
-
-  }
-}
-
-
-
-
-/*-- Section-b End--*/
-
-/*-- Section-c Start--*/
-
-
-#section-c{
-    position: absolute;
-    top:205%;
-    width:100%;
-    height:10%;
-    background:var(--section-c);
-    display:flex;
-    justify-content: center;
-    overflow: hidden;
-}
-
-
-#section-c .s-brand{
-    position: relative;
-    height: 50%;
-    align-self: center;
-    animation: moving-banner 29s linear infinite;
-
-}
-
-#section-c .brand{
-   display: none;
-
-}
-
-
-@keyframes moving-banner {
-
-  0%{
-    left: -104%;
-  }
-  100%{
-    left: 100%;
-  }
-
-}
-/*-- Section-c End--*/
-
-
-/* footer start */
     
-
-#section-footer{
-    position: absolute;
+    
+    #section-footer .reds, .services, .location,  .contacts {
+    height: 40%;
+      
+    }
+    
+  
+  
+    #section-footer .reds, .services, .location,  li{
+      text-align: left;
+      align-content: space-around;
+      
+    }
+    
+    
+    
+    #section-footer .contacts p{
+     padding:7% 0%;
+     
+    }
+    
+    
+    #section-footer .contacts{
+        width:30%;
+     margin-left: 60%;
+     }
+     
+     
+    
+    #section-footer .info .box{
+    
+  }
+    
+  
+    
+    
+    /*-- tags--*/
+    
+    .info-bottom{
     width: 100%;
-    top:215%;
-    height:75%;
-    background:var(--section-footer);
-    overflow: hidden;
-  }
-  
-  .info{
-  width:100%;
-  height: 75%;
-  margin-right:1%;
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  
-  }
-  
-  #section-footer .reds a{
-    color: var(--linkColor);
-    
-   
-   }
-   
-   
-  
-  #section-footer ul, li, a {
-  background-color: inherit;
-  
-  
-  }
-  
-  #section-footer .reds, .services, .location, .contacts{
-    width:26%;
-    font-size: 2vh;
-  font-family: var(--font);
-  
-  
-  }
-  
-  
-  #section-footer .reds, .services, .location,  .contacts {
-  height: 40%;
-    
-  }
-  
-
-
-  #section-footer .reds, .services, .location,  li{
-    text-align: left;
-    align-content: space-around;
-    
-  }
-  
-  
-  
-  #section-footer .contacts p{
-   padding:7% 0%;
-   
-  }
-  
-  
-  #section-footer .contacts{
-      width:30%;
-   margin-left: 60%;
-   }
-   
-   
-  
-  #section-footer .info .box{
-  width: 30%;
-  height: 20%;
-  
-}
-  
-
-  
-  
-  /*-- tags--*/
-  
-  .info-bottom{
-  width: 100%;
-  height: 30%;
-  font-family: sans-serif;
-  font-size: 1.6vh;
-  color: var(--infoTextColor#252425);
-  font-family: var(--text);
-  background: var(--background);
-  display:flex;
-  flex-direction: column;
-
-  }
-  
-  .info-bottom .rights{
-    width:100%;
-    height: 35%;
-
-  }
-  
-  .rights ul {
-    width:50%;
-    height: 7vh;
+    height: 30%;
+    font-family: sans-serif;
+    font-size: 1.6vh;
+    color: var(--infoTextColor#252425);
+    font-family: var(--text);
+    background: var(--background);
     display:flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-
   
+    }
+    
+    .info-bottom .rights{
+      width:100%;
+      height: 35%;
+  
+    }
+    
+    .rights ul {
+      width:50%;
+      height: 7vh;
+      display:flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+  
+    
+    }
+    
+  
+    
+    .rights li {
+      text-align: center;
   }
+    
+    
+    
+    .info-bottom .tags{
+      background:var( --tagsBackground);
+      width:100%;
+      height: 70%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+    }
   
-
-  
-  .rights li {
+    .info-bottom .tags li{
+    width:20%;
+    height: 25%; 
+    font-size: 1.4vh;
+    color: var(--tags);
+    font-family: var(--text);
     text-align: center;
-}
+    }
+    
+    /*-- Footer end--*/ 
   
   
-  
-  .info-bottom .tags{
-    background:var( --tagsBackground);
-    width:100%;
-    height: 70%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
   }
-
-  .info-bottom .tags li{
-  width:20%;
-  height: 25%; 
-  font-size: 1.4vh;
-  color: var(--tags);
-  font-family: var(--text);
-  text-align: center;
-  }
-  
-  /*-- Footer end--*/ 
-
-}
