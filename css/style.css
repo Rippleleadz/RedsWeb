@@ -12,6 +12,7 @@
       /* section- a */
       --navbarBorder:rgb(186, 46, 47, 1);
       --navbarBackground:rgb(93, 93, 93, .5);
+      --navMouseOver: #4b4b4b;
   
        /* section- b */
        --section-b:#202020;
@@ -25,7 +26,6 @@
   
       /* section- d */
       --section-d:#5d5d5d;
-      --navMouseOver: #4b4b4b;
   
       /* footer */
       --section-footer:#5d5d5d;
@@ -149,7 +149,7 @@
     width:30vw;
     height: auto;
     align-self: flex-start;
-    margin: 3% 0% 0% 3%;   
+    margin: 7% 0% 0% 4%;   
   
   }
   
@@ -226,10 +226,6 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-   
-  
-  
-  
   
   }
   
@@ -247,13 +243,6 @@
   
   }
   
-  
-  #section-a a:hover{
-    background-color: var(--navMouseOver);
-    border-radius: 5px;
-  
-  }
- 
   
   /*-- Section-a Finish--*/
   
@@ -680,7 +669,7 @@ margin-left: 11%;
 
 #showcase .s-bg-image{
     width: 100%;
-    height: auto;
+    height: 100vh;
     animation: zoom 10s linear forwards;
 
 }
@@ -697,7 +686,7 @@ margin-left: 11%;
 
 
 #showcase .logo{
-    width:13vw;
+    width:15vw;
     height: auto;
     align-self: flex-start;
     padding: 5% 0% 0% 3%;  
@@ -724,8 +713,7 @@ margin-left: 11%;
 
 
 #showcase .btn{
-    width:10%;
-    height: auto;
+    width:18%;
     margin:1% 0% 16% 0%;
     font-size: 2.5vh;
     text-align: center;
@@ -787,12 +775,7 @@ align-items: center;
 position: relative;
 width:90%;
 height: 70%;
-font-family: var(--font);
-background:var(--section-d);
-border-radius: 5px;
-border: 2px solid var(--section-c);
-border-top: 8px solid var(--section-c);
-font-size: 1.3em;
+font-size: 7vh;
 
 
 }
@@ -1102,14 +1085,8 @@ font-size: 4vh;
   #section-a a{
   position: relative;
   width:90%;
-  height: 45%;
-  margin-left:3%;
-  font-family: var(--font);
-  background:var(--section-d);
-  border-radius: 5px;
-  border: 2px solid var(--section-c);
-  border-top: 8px solid var(--section-c);
-  font-size: 2em;
+  height: 80%;
+  font-size: 5vh;
 
   }
   
@@ -1159,6 +1136,7 @@ font-size: 4vh;
     background-size: cover;
     height:100%;
     width:100%;
+    overflow: hidden;
 
 
     }
@@ -1181,6 +1159,7 @@ font-size: 4vh;
     width:100%;
     height:60%;
     right:0%;
+    overflow-x: hidden;
    animation: moving-clouds 50s linear infinite;
    display:block;
 }
@@ -1190,6 +1169,7 @@ font-size: 4vh;
     width:60%;
     height: 45%;
     right:44%;
+    overflow-x: hidden;
    animation: moving-clouds 80s linear infinite;
    display:block;
 }
@@ -1411,11 +1391,6 @@ font-size: 4vh;
      
      
     
-    #section-footer .info .box{
-    
-  }
-    
-  
     
     
     /*-- tags--*/

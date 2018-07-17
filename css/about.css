@@ -14,7 +14,7 @@
 
       /* section- a */
       --navbarBorder:rgb(186, 46, 47, 1);
-      --navbarBackground:rgb(93, 93, 93, 1);
+      --navbarBackground:rgb(93, 93, 93, .5);;
       --navMouseOver: #4b4b4b;
 
       /* section- c */
@@ -112,7 +112,7 @@ a:hover{
   position: absolute;
   top:4%;
   left:4%;
-  width:20vh;
+  width:30vw;
   height: auto;
 }
 
@@ -126,7 +126,7 @@ section .me {
 
 .me p{
 width:95vw;
-height: auto;
+height: 45vh;
 margin: 0 auto;
 padding:0%;
 text-align: left;
@@ -145,7 +145,7 @@ align-self: center;
 
 #section-a{
   position: absolute;
-  top: 100%;
+  top: 102%;
   height:8%;
   width:100%;
   overflow:hidden;
@@ -180,18 +180,19 @@ background:var(--navbarBackground);
 border-radius: 5px;
 border: 2px solid var(--navbarBorder);
 border-top: 8px solid var(--navbarBorder);
-font-size: 2vh;
+font-size: 2.5vh;
 
 }
 
 
 /*-- Section-a Finish--*/
 
-
 /*-- Section-c Start--*/
+  
+  
 #section-c{
   position: absolute;
-  top:109%;
+  top:110%;
   width:100%;
   height:10%;
   background:var(--section-c);
@@ -232,346 +233,10 @@ font-size: 2vh;
   
 
 #section-footer{
-position: absolute;
-width: 100%;
-top:110.7%;
-height:75%;
-background:var(--section-footer);
-overflow: hidden;
-}
-
-.info{
-  width:100%;
-  height: 75%;
-  margin-right:1%;
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  
-  }
-  
-  #section-footer .reds a{
-    color: var(--linkColor);
-    
-   
-   }
-   
-   
-  
-  #section-footer ul, li, a {
-  background-color: inherit;
-  
-  
-  }
-  
-  #section-footer .reds, .services, .location, .contacts{
-    width:26%;
-    font-size: 2vh;
-  font-family: var(--font);
-  
-  
-  }
-  
-  
-  #section-footer .reds, .services, .location,  .contacts {
-  height: 40%;
-    
-  }
-  
-
-
-  #section-footer .reds, .services, .location,  li{
-    text-align: left;
-    align-content: space-around;
-    
-  }
-  
-  
-  
-  #section-footer .contacts p{
-   padding:7% 0%;
-   
-  }
-  
-  
-  #section-footer .contacts{
-      width:30%;
-   margin-left: 60%;
-   }
-   
-   
-  
-  #section-footer .info .box{
-  width: 30%;
-  height: 20%;
-  
-}
-  
-
-  
-  
-  /*-- tags--*/
-  
-  .info-bottom{
-  width: 100%;
-  height: 30%;
-  font-family: sans-serif;
-  font-size: 1.6vh;
-  color: var(--infoTextColor#252425);
-  font-family: var(--text);
-  background: var(--background);
-  display:flex;
-  flex-direction: column;
-
-  }
-  
-  .info-bottom .rights{
-    width:100%;
-    height: 35%;
-
-  }
-  
-  .rights ul {
-    width:50%;
-    height: 7vh;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-
-  
-  }
-  
-
-  
-  .rights li {
-    text-align: center;
-}
-  
-  
-  
-  .info-bottom .tags{
-    background:var( --tagsBackground);
-    width:100%;
-    height: 70%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .info-bottom .tags li{
-  width:20%;
-  height: 25%; 
-  font-size: 1.4vh;
-  color: var(--tags);
-  font-family: var(--text);
-  text-align: center;
-  }
-  
-  /*-- Footer end--*/ 
-
-
-
-
-
-
-/*--Media--*/
-
-
-@media screen and (min-width:1366px){
-
-    #showcase {
-        position: absolute;
-        width:100%;
-        height: 100%;  
-        overflow: hidden; 
-    
-    }
-    
-    #showcase .container{
-        position: absolute;
-        top:5%;
-        width:100%;
-        height: 100%;
-       display: flex;
-       flex-direction: column;
-      
-       
-     }
-    
-    
-    #showcase .bg-image{
-        width:100%;
-        height:100%;
-     
-    }
-    
-    
-    #showcase .s-bg-image{
-         display: none;
-    }
-
-#showcase .container{
- position: absolute;
- top:5%;
- height: 95%;
- display:flex;
- flex-direction: column;
-
-
-}
-
-#showcase .logo{
-    position: relative;
-    left:5%;
-    width:10%;
-    
-
-}
-
-#showcase h1{
-    position: absolute;
-    top:5%;
-    width:97%;
-    left:2.5%;
-    font-family: var(--font);
-    font-size: 550%;
-    text-transform: capitalize;
-}
-
-#showcase p{
- position: relative;
-  top:1%;
-  width:30%;
-  left:34%;
-  height: 100%;
-  margin: auto;
-  text-align: left;
-  font-family: sans-serif;
-  font-size: 110%;
-  background: rgba(93, 93, 93, 0.3);
-  overflow: hidden;
-}
-
-
-/*-- Showcase End--*/
-
-
-/*-- Main Area Start--*/
-
-/*-- Section-a Start--*/
-
-#section-a{
-    position: absolute;
-    top: 101%;
-    height:11%;
-    width:100%;
-    overflow:hidden;
-    background: var(--background);
-  
-  
-  }
-  
-  
-  #section-a ul{
-    position: relative;
-    width:98%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-content: space-around;
-  }
-  
-  #section-a li{
-    position: relative;
-    width:50%;
-    height:100%;
-    display: flex;
-    
-  
-  
-  
-  }
-  
-  #section-a a{
-  position: relative;
-  width:90%;
-  height: 45%;
-  margin-left:3%;
-  font-family: var(--font);
-  background:var(--navbarBackground);
-  border-radius: 5px;
-  border: 2px solid var(--navbarBorder);
-  border-top: 8px solid var(--navbarBorder);
-  font-size: 2em;
-  
-  
-  }
-  
-  #section-a a:hover{
-    background-color: var(--navMouseOver);
-    border-radius: 5px;
-  
-  }
-  
-  
-
-/*-- Section-a Finish--*/
-
-
-/*-- Section-c Start--*/
-#section-c{
-    position: absolute;
-    width:100%;
-    top:110%;
-    height:16%;
-    background:var(--section-c);
-    display:flex;
-    justify-content: center;
-
-    overflow: hidden;
-}
-
-
-#section-c .s-brand{
-    position: relative;
-    height: 50%;
-    align-self: center;
-    animation: moving-banner 29s linear infinite;
-
-}
-
-#section-c .brand{
-   display: none;
-
-}
-
-
-@keyframes moving-banner {
-
-  0%{
-    left: -104%;
-  }
-  100%{
-    left: 100%;
-  }
-
-}
-/*-- Section-c End--*/
-
-
- /* footer start */
-  
-
-#section-footer{
   position: absolute;
   width: 100%;
-  top:128%;
-  height:75%;
+  top:120%;
+  height:100%;
   background:var(--section-footer);
   overflow: hidden;
 }
@@ -583,8 +248,8 @@ margin-right:1%;
 display:flex;
 flex-direction: row;
 flex-wrap: wrap;
-align-content: center;
-justify-content: flex-end;
+justify-content: space-around;
+align-items: center;
 
 }
 
@@ -603,40 +268,49 @@ background-color: inherit;
 }
 
 #section-footer .reds, .services, .location, .contacts{
-  width:29%;
-  height: 40%;
-  margin-right: 2%;
+  width:26%;
+  font-size: 2vh;
 font-family: var(--font);
 
 
-
 }
 
-#section-footer .reds, .services, .location, .contacts{
-  font-size: 2vh;
+
+#section-footer .reds, .services, .location,  .contacts {
+height: 40%;
   
 }
 
+
+
 #section-footer .reds, .services, .location,  li{
   text-align: left;
+  align-content: space-around;
   
 }
 
 
 
 #section-footer .contacts p{
- padding:7%;
+ padding:7% 0%;
  
 }
 
 
+#section-footer .contacts{
+    width:40%;
+ margin-left: 45%;
+ }
+ 
+ 
 
 #section-footer .info .box{
-  width: 14%;
-  height: 20%;
-  
+width: 25%;
+height: auto;
+padding-left:3%; 
+
+
 }
- 
 
 
 
@@ -663,8 +337,12 @@ flex-direction: column;
 }
 
 .rights ul {
-  width:80%;
+  width:50%;
   height: 7vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 
 
 }
@@ -684,18 +362,480 @@ flex-direction: column;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
 }
 
 .info-bottom .tags li{
-width:18%;
+width:20%;
 height: 25%; 
 font-size: 1.4vh;
 color: var(--tags);
-font-family: var(--text)
+font-family: var(--text);
+text-align: center;
 }
 
 /*-- Footer end--*/ 
 
+@media screen and (min-width: 568px) {
+
+  
+/*-- Showcase Start--*/
+
+
+#showcase {
+  width:100%;
+  height: 100%; 
+  overflow: hidden; 
+
+}
+
+
+#showcase .bg-image{
+display:none;
+
+}
+
+
+#showcase .s-bg-image{
+width:100%;
+height:100vh;
+}
+
+
+
+
+#showcase .logo{
+  width:15vw;
+  height: auto;
+}
+
+
+section .me {
+width:100%;
+height: 100%;
+overflow: hidden;
+
+}
+
+.me p{
+width:95vw;
+height: 30vh;
+margin: 0 auto;
+padding:0%;
+text-align: left;
+font-family: sans-serif;
+font-size: 4.4vh;
+background: var(--pBackground);
+align-self: center;
+
+}
+
+
+
+/*-- Showcase End--*/
+
+
+
+/*-- Section-a Start--*/
+
+#section-a{
+  position: absolute;
+  top: 130%;
+  height:30%;
+  width:100%;
+  overflow:hidden;
+  background: var(--background);
+  
+  
+  }
+  
+  
+  #section-a ul{
+  position: relative;
+  width:98%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  
+  }
+  
+  #section-a li{
+  position: relative;
+  width:50%;
+  height:80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
 }
   
+ 
+  #section-a ul li a{
+    width:90%;
+    height:75%;
+    font-size: 7vh;
+    
+    }
+    
+
+  #section-a a:hover{
+  background-color: var(--navMouseOver);
+  border-radius: 5px;
+  
+  }
+/*-- Section-a Finish--*/
+
+
+/*-- Section-c Start--*/
+
+#section-c{
+  position: absolute;
+  width:100%;
+  top:160%;
+  height:24%;
+  
+  }
+  
+  
+  #section-c .s-brand{
+     display:none;
+  }
+  
+  
+  
+  #section-c .brand{
+      position: relative;
+      width:75%;
+      height: auto;
+      height: 12vh;
+     align-self: center;
+     display: block;
+     animation: moving-banner 29s linear infinite;
+  }
+  
+  
+  /*-- Section-c End--*/
+  
+  
+  /* footer start */
+  
+  
+  #section-footer{
+  position: absolute;
+  top:184%;
+  width: 100%;
+  height:150%;
+  }
+  
+  
+  #section-footer .reds, .services, .location, .contacts{
+    font-size: 4vh;
+  }
+  
+  
+  #section-footer .info .box{
+  width: 13%;
+  height: auto;
+  padding: 0% 2% 0% 0%;
+  
+  }
+  
+  
+  
+  
+  /*-- tags--*/
+  
+  .info-bottom{
+  font-size: 3.5vh;
+  
+  }
+  
+  .rights ul {
+    height: 8vh;
+  
+  }
+  
+  .info-bottom .tags li{
+  font-size: 4vh;
+  
+  }
+    
+    /*-- Footer end--*/ 
+  
+  
+  }
+
+
+
+
+@media screen and (min-width: 1024px) {
+
+  
+  /*-- Showcase Start--*/
+  
+  
+  #showcase {
+    position: relative;
+    width:100%;
+    height: 100%; 
+    overflow: hidden; 
+  
+  }
+  
+  
+  #showcase .bg-image{
+    width:100%;
+  height:100vh;
+  display: block;
+
+  }
+  
+  
+  #showcase .s-bg-image{
+    display:none;
+  
+  }
+  
+  
+  #showcase .logo{
+    width:10vw;
+    height: auto;
+  }
+  
+  
+  section .me {
+    width:100%;
+   height: 60%;
+   overflow: hidden;
+
+  
+  }
+  
+  .me p{
+  position: absolute;
+  bottom: 0%;
+  right:2%;
+  width:50%;
+  height: 30vh;
+  margin: 0 auto;
+  padding:0%;
+  text-align: left;
+  font-family: sans-serif;
+  font-size: 2.2vh;
+  background: var(--pBackground);
+  align-self: center;
+  
+  }
+  
+  
+  
+  /*-- Showcase End--*/
+  
+  
+  
+  /*-- Section-a Start--*/
+  
+ 
+
+#section-a{
+  position: absolute;
+  top: 102%;
+  height:11%;
+  width:100%;
+  overflow:hidden;
+  background: var(--background);
+ 
+}
+
+
+#section-a ul{
+  position: relative;
+  width:98%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+}
+
+#section-a li{
+  position: relative;
+  width:25%;
+  height:100%;
+  display: flex;
+}
+
+ 
+#section-a ul li a{
+  width:90%;
+  height:75%;
+  font-size: 5vh;
+  
+  }
+  
+
+#section-a a:hover{
+  background-color: var(--navMouseOver);
+  border-radius: 5px;
+
+}
+
+
+
+  /*-- Section-a Finish--*/
+  
+  
+  /*-- Section-c Start--*/
+  
+  #section-c{
+    position: absolute;
+    width:100%;
+    top:115%;
+    height:16%;
+}
+    
+    /*-- Section-c End--*/
+    
+    
+    /* footer start */
+    
+    #section-footer{
+      position: absolute;
+      width: 100%;
+      top:132%;
+      height:100%;
+      background:var(--section-footer);
+      overflow: hidden;
+    }
+    
+    .info{
+      width:100%;
+      height: 75%;
+      margin-right:1%;
+      display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      
+      }
+      
+      #section-footer .reds a{
+        color: var(--linkColor);
+        
+       
+       }
+       
+       
+      
+      #section-footer ul, li, a {
+      background-color: inherit;
+      
+      
+      }
+      
+      #section-footer .reds, .services, .location, .contacts{
+        width:26%;
+        font-size: 95%;
+        font-size: 2.5vh;
+      font-family: var(--font);
+      
+      
+      }
+      
+      
+      #section-footer .reds, .services, .location,  .contacts {
+      height: 40%;
+        
+      }
+      
+    
+    
+      #section-footer .reds, .services, .location,  li{
+        text-align: left;
+        align-content: space-around;
+        
+      }
+      
+      
+      
+      #section-footer .contacts p{
+       padding:7% 0%;
+       
+      }
+      
+      
+      #section-footer .contacts{
+          width:30%;
+       margin-left: 60%;
+       }
+       
+       
+      
+      
+      
+      /*-- tags--*/
+      
+      .info-bottom{
+      width: 100%;
+      height: 30%;
+      font-family: sans-serif;
+      font-size: 1.6vh;
+      color: var(--infoTextColor#252425);
+      font-family: var(--text);
+      background: var(--background);
+      display:flex;
+      flex-direction: column;
+    
+      }
+      
+      .info-bottom .rights{
+        width:100%;
+        height: 35%;
+    
+      }
+      
+      .rights ul {
+        width:50%;
+        height: 7vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    
+      
+      }
+      
+    
+      
+      .rights li {
+        text-align: center;
+    }
+      
+      
+      
+      .info-bottom .tags{
+        background:var( --tagsBackground);
+        width:100%;
+        height: 70%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+      }
+    
+      .info-bottom .tags li{
+      width:20%;
+      height: 25%; 
+      font-size: 1.4vh;
+      color: var(--tags);
+      font-family: var(--text);
+      text-align: center;
+      }
+      
+      /*-- Footer end--*/ 
+    
+    
+    }
