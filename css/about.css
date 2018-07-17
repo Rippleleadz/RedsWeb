@@ -164,7 +164,6 @@ align-self: center;
 }
 
 #section-a li{
-  position: relative;
   width:50%;
   height:82%;
   display: flex;
@@ -172,7 +171,7 @@ align-self: center;
 }
 
 
-#section-a ul li a{
+#section-a a{
 width:90%;
 height:75%;
 font-family: var(--font);
@@ -439,20 +438,19 @@ align-self: center;
 
 /*-- Section-a Start--*/
 
+
 #section-a{
   position: absolute;
-  top: 130%;
-  height:30%;
+  top: 134%;
+  height:18%;
   width:100%;
   overflow:hidden;
   background: var(--background);
-  
   
   }
   
   
   #section-a ul{
-  position: relative;
   width:98%;
   height: 100%;
   display: flex;
@@ -462,29 +460,28 @@ align-self: center;
   }
   
   #section-a li{
-  position: relative;
   width:50%;
   height:80%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+   
+  }
   
-}
+  #section-a a{
+  width:90%;
+  height: 70%;
+  font-size: 7vh;
   
- 
-  #section-a ul li a{
-    width:90%;
-    height:75%;
-    font-size: 7vh;
-    
-    }
-    
-
-  #section-a a:hover{
-  background-color: var(--navMouseOver);
-  border-radius: 5px;
   
   }
+
+#section-a a:hover{
+  background-color: var(--navMouseOver);
+  border-radius: 5px;
+
+}
+
 /*-- Section-a Finish--*/
 
 
@@ -493,7 +490,7 @@ align-self: center;
 #section-c{
   position: absolute;
   width:100%;
-  top:160%;
+  top:154%;
   height:24%;
   
   }
@@ -524,7 +521,7 @@ align-self: center;
   
   #section-footer{
   position: absolute;
-  top:184%;
+  top:178%;
   width: 100%;
   height:150%;
   }
@@ -639,48 +636,58 @@ align-self: center;
   
  
 
-#section-a{
-  position: absolute;
-  top: 102%;
-  height:11%;
-  width:100%;
-  overflow:hidden;
-  background: var(--background);
- 
-}
 
-
-#section-a ul{
-  position: relative;
-  width:98%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  align-content: space-around;
-}
-
-#section-a li{
-  position: relative;
-  width:25%;
-  height:100%;
-  display: flex;
-}
-
- 
-#section-a ul li a{
-  width:90%;
-  height:75%;
-  font-size: 5vh;
+  #section-a{
+    position: absolute;
+    top: 101%;
+    height:7%;
+    width:100%;
+    overflow:hidden;
+    background: var(--background);
+  
   
   }
   
-
-#section-a a:hover{
-  background-color: var(--navMouseOver);
+  
+  #section-a ul{
+    position: relative;
+    width:98%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+  }
+  
+  #section-a li{
+    position: relative;
+    width:50%;
+    height:100%;
+    display: flex;
+    
+  }
+  
+  #section-a a{
+  position: relative;
+  width:90%;
+  height: 70%;
+  margin-left:3%;
+  font-family: var(--font);
+  background:var(--navbarBackground);
   border-radius: 5px;
-
-}
-
+  border: 2px solid var(--navbarBorder);
+  border-top: 8px solid var(--navbarBorder);
+  font-size: 2em;
+  font-size: 3.4vh;
+  
+  
+  }
+  
+  #section-a a:hover{
+    background-color: var(--navMouseOver);
+    border-radius: 5px;
+  
+  }
+  
 
 
   /*-- Section-a Finish--*/
@@ -691,7 +698,7 @@ align-self: center;
   #section-c{
     position: absolute;
     width:100%;
-    top:115%;
+    top:109%;
     height:16%;
 }
     
@@ -703,7 +710,7 @@ align-self: center;
     #section-footer{
       position: absolute;
       width: 100%;
-      top:132%;
+      top:125.5%;
       height:100%;
       background:var(--section-footer);
       overflow: hidden;
