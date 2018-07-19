@@ -192,13 +192,20 @@
   top: 37%;
   width: 100%;
   height: 130%;
-  background:var(--section-b);
-  display:flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  overflow: hidden;
-  
+ 
+  }
+
+
+  #section-b .container{
+    width: 100%;
+    height: 100%;
+    background:var(--section-b);
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    
   }
   
   #section-b a {
@@ -549,13 +556,15 @@ text-align: center;
     top: 122%;
     width: 100%;
     height: 370%;
-    background:var(--section-b);
-     display:flex;
-    flex-wrap: wrap;
-    align-items: center;
-    overflow: hidden;
-   
   }
+
+  
+  #section-b .container{
+    width: 100%;
+    height: 100%; 
+    
+  }
+  
   
   #section-b a {
     
@@ -810,13 +819,16 @@ font-size: 2em;
   top: 108%;
   width: 100%;
   height: 74%;
-  background:var(--section-b);
-   display:flex;
-  flex-wrap: wrap;
-  align-items: center;
-  overflow: hidden;
- 
+  
 }
+
+
+#section-b .container{
+  width: 100%;
+  height: 100%;
+
+}
+
 
 #section-b a {
   

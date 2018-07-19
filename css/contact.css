@@ -92,62 +92,6 @@ a:hover{
 
 
 
-@media(min-width:769px){
-
-      
-      h1{
-       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-       font-size: 3em;
-       color: rgb(1, 1, 75);
-      
-    }
-    
-    h1{
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-     font-size: 3em;
-     color: rgb(1, 1, 75);
-
-    }
-    
-  
-   ul{
-    position: relative;
-    width:90%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-   }
-
- 
-  
- li{
-    position: relative;
-    width:50%;
-    height:100%;
-    display: flex;
-    
-  
-  
-  
-  }
-  
- a{
-  position: relative;
-  width:90%;
-  height: 45%;
-  margin-left:3%;
-  font-size: 2em;
-  
-  
-  }
-}
-
-
-
-@media screen and (max-width: 768px) {
-  
   .contacts{
     position: absolute;
     width:100%;
@@ -174,11 +118,11 @@ a:hover{
   
   .container .logo{
     position: absolute;
-    width:20vh;
-    height: 5vh;
-    left:6%;
-    top:4%;
-  
+  width:30vw;
+  height: auto;
+  left:6%;
+  top:5%;
+
   }
   .container h1{
   width:80%;
@@ -203,7 +147,7 @@ a:hover{
    .info li{
     font-size: 2.2vh;
     text-align: left;
-    padding:1%;
+    padding:2%;
     }
    
     .call img {
@@ -280,17 +224,19 @@ a:hover{
   /* --SOCIAL-- */
   
   .social{
-    width:45%;
-    height:10%;
+    width:30%;
+    height:auto;
     margin: 0 auto;
+    padding: 3% 0%;
    display:flex;
    justify-content: space-around;
    align-items: center;
   }
   
   .social .box{
-    width: 30%;
+    width: 32%;
     height: 50%;
+    padding: 0% 7%;
     
     }
   
@@ -339,4 +285,230 @@ a:hover{
     align-self: center;
     }
 
+
+    @media(min-width: 568px){
+
+     
+  .contacts{
+    position: absolute;
+    width:100%;
+    height: 220%;
+  }
+  
+  .container{
+    width:100%;
+    height: 60%;
+  }
+  
+  .container .logo{
+    position: absolute;
+  width:16vw;
+  }
+  .container h1{
+  width:90%;
+  font-size: 15vh;
+  }
+  
+  .info, .call {
+    height: 33%;
+    }
+  
+  .info h3{
+   font-size: 5vh;
+  }
+  
+.info li{
+    font-size: 3.5vh;
+    text-align: left;
+    padding:2%;
+    }
+   
+    .call img {
+     margin-top: 13%;
+    }
+  
+    
+   /* --NAV START-- */
+  
+   .nav{
+    height:10%;
+    width:100%;  
+    }
+    
+    .nav ul{
+    width:98%;
+    height: 100%;
+    }
+    
+    .nav li{
+    width:20%;
+    height:70%; 
+    }
+    
+   .nav a{
+    width:90%;
+    height: 100%;
+    font-size: 7vh;
+    }
+    
+   .na a:hover{
+    background-color: var(--navMouseOver);
+    border-radius: 5px;  
+    }
+  
+  /* --SOCIAL-- */
+  
+  .social{
+    width:40%;
+    height:auto;
+    margin: 0 auto;
+    padding: 3% 0%;
+  }
+  
+  .social .box{
+    width: 20%;
+    height: auto;
+    padding: 0% 7%; 
+    }
+  
+   .info-bottom{
+     width:100%;
+     height:10%;
+  font-family: sans-serif;
+  font-size: 3vh;
+   }
+  
+   .info-bottom ul{
+  width: 100%;
+  height: 60%;
+  }
+  
+  
+  
+   .tags{
+   width:100%;
+   height: 5%;
+   }
+  
+   .tags li{
+    width:15%; 
+    font-size: 2.5vh;
+    }
+ 
+  
+}
+
+
+@media(min-width: 1024px){
+
+     
+  .contacts{
+    position: absolute;
+    width:100%;
+    height: 150%;
+  }
+  
+  .container{
+    width:100%;
+    height: 60%;
+  }
+  
+  .container .logo{
+    position: absolute;
+    width:11%;
+    width:11vw;
+  }
+  .container h1{
+  width:90%;
+  font-size: 4.5em;
+  font-size: 9vh;
+  }
+  
+  .info, .call {
+    height: 33%;
+    }
+  
+  .info h3{
+   font-size: 3vh;
+  }
+  
+.info li{
+    font-size: 2.5vh;
+    text-align: left;
+    padding:2%;
+    }
+   
+    .call img {
+     margin-top: 13%;
+    }
+  
+    
+   /* --NAV START-- */
+  
+   .nav{
+    height:8%;
+    width:100%;  
+    }
+    
+    .nav ul{
+    width:98%;
+    height: 100%;
+    }
+    
+    .nav li{
+    width:20%;
+    height:70%; 
+    }
+    
+   .nav a{
+    width:90%;
+    height: 100%;
+    font-size: 6vh;
+    }
+    
+   .na a:hover{
+    background-color: var(--navMouseOver);
+    border-radius: 5px;  
+    }
+  
+  /* --SOCIAL-- */
+  
+  .social{
+    width:40%;
+    height:auto;
+    margin: 0 auto;
+    padding: 3% 0%;
+  }
+  
+  .social .box{
+    width: 15%;
+    height: auto;
+    padding: 0% 7%; 
+    }
+  
+   .info-bottom{
+     width:100%;
+     height:10%;
+  font-family: sans-serif;
+  font-size: 2vh;
+   }
+  
+   .info-bottom ul{
+  width: 100%;
+  height: 60%;
+  }
+  
+  
+  
+   .tags{
+   width:100%;
+   height: 5%;
+   }
+  
+   .tags li{
+    width:15%; 
+    font-size: 2vh;
+    }
+ 
+  
 }
